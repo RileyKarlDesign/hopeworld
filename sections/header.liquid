@@ -6,16 +6,18 @@
     </div>
 
 
-    <ul class=' flex gap-[-5px] '>
+    <ul class=' flex gap-[-5px] bg-red-500 w-fit h-fit rounded '>
         {% for link in linklists.main-menu.links %}
-        <li class=' bg-white rounded-full w-fit  h-fit pl-2 pr-2 mb-1'><a href="{{ link.url }}">{{ link.title }}</a></li>
+        <li class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></li>
         {% endfor %}
     </ul>
 
-    <div class=' flex justify-end ' >
-        <p class='bg-white rounded-full w-fit h-fit pl-2 pr-2 mb-1'><a href="/">Cart [ {{ cart.item_count }} ]</a></p>
+    <div class=' flex justify-end  ' id='cart-btn' >
+        <p class='bg-white rounded-full w-fit h-fit pl-2 pr-2 mb-1'> Cart [ {{ cart.item_count }} ]</p>
     </div>
 
 
 
 </div>
+
+ 
