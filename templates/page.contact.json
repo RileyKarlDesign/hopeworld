@@ -17,11 +17,20 @@
         "title": "Roots",
         "body": "Hopeworld is an idyllic land that runs parallel to our universe, filled with cheeky mythical creatures and bright colours, instead of destructive humans and grey buildings. We’ve managed to pluck some of the land’s most bizarre characters out of Hopeworld and brought them to our own realm in candle form."
       }
+    },
+    "about_block_WVhC3m": {
+      "type": "about-block",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/439734168_405655532267491_3672544439060939808_n_1_c5955cde-135d-4035-b91f-9e405db0a486.jpg",
+        "title": "About Hope",
+        "body": "Hopeworld is an idyllic land that runs parallel to our universe, filled with cheeky mythical creatures and bright colours, instead of destructive humans and grey buildings. We’ve managed to pluck some of the land’s most bizarre characters out of Hopeworld and brought them to our own realm in candle form. \n\nOur candles are made with the environment at its heart. Each candle is made using olive wax which is more sustainable than common waxes such as soy and paraffin. Olive wax has a long and clean burn, and we use non-toxic pure essential oils as scent, so you don’t have to worry about harming yourself or the environment as you burn our candles."
+      }
     }
   },
   "order": [
     "main",
     "form",
-    "about_block_nmb3RY"
+    "about_block_nmb3RY",
+    "about_block_WVhC3m"
   ]
 }
