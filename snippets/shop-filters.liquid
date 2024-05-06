@@ -4,11 +4,11 @@
             {% for link in linklists.side-menu.links %}
 
                 {% if cc == link.title %}
-                    <a class='text-stone-300' href='{{ link.url  }}' >   {{ link.title  }} </a>
+                    <h2> <a class='text-stone-300' href='{{ link.url  }}' >   {{ link.title  }} </a></h2>
                 {% endif %}
 
                 {% if cc != link.title %}
-                    <a class='none-active'  href='{{ link.url }}' >  {{ link.title  }} </a>
+                    <h2> <a class='none-active'  href='{{ link.url }}' >  {{ link.title  }} </a></h2>
                 {% endif %}
 
             {% endfor %}

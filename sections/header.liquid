@@ -6,17 +6,17 @@
     </div>
 
 
-    <ul class=' flex w-fit   h-fit  '>
+    <div class='flex w-fit h-fit'>
+
         {% for link in linklists.main-menu.links %} 
-          <li class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></li>
+          <h2 class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></h2>
         {% endfor %}
 
-        <div class='flex justify-end w-fit h-fit ' id='cart-btn' >
-          <p class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'> Cart [ {{ cart.item_count }} ]</p>
+        <div class='flex justify-end w-fit h-fit' id='cart-btn' >
+          <h2 class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'> Cart [ {{ cart.item_count }} ]</h2>
       </div>
-    </ul>
-
-   
+      
+    </div>
 
 </div>
 

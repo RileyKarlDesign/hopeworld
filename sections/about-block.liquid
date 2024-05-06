@@ -3,22 +3,24 @@
 
   
 
-      <div class=" flex ">
+      <div class="flex justify-center pb-20">
 
 
-        <div class='w-full '>
-          <div class='object-contain'>
-            {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
-          </div>
-        </div>
+      
 
-        <div class='w-full p-4'>
+        <div class=' w-[400px]  '>
 
-         <p> {{ section.settings.title }} </p>
-        <p class='text-[16px] '> {{ section.settings.body }} </p>
+          <div class='w-full flex justify-center pb-14 '>
+            <div class=' w-48'>
+              {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
+            </div>
+          </div> 
+
+         <h2 class='text-center'> {{ section.settings.title }} </h2>
+        <p class='text-[14px] '> {{ section.settings.body }} </p>
         
       </div>
-
+ 
       </div>
 
    
