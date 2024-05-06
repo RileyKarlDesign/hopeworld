@@ -1,10 +1,27 @@
-<div class='grid grid-cols-4 pt-28'>
+<div class='grid grid-cols-5 pt-28 p-2'>
 {% if collection.all_products_count > 0 %}
-  
-    {% render 'title' with { title:collection.title } %} 
-    <div class='grid grid-flow-dense grid-cols-4 col-span-3 gap-2  p-2  '>  
+    <div>
+
+        <div class=' flex flex-col'>
+ 
+            {% assign currentCollection = collection.title %}
+     
+            {% for collection in collections %}
+                {% if currentCollection = collection.title %}
+                    <a class=' opacity-80 ' href='{{ collection.url  }}' >  active   {{- collection.title  }} </a>
+                {% else %}
+                    <a class=' text-green-500 '  href='{{ collection.url  }}' >  {{- collection.title  }} </a>
+                {% endif %}
+
+            {% endfor %}
+
+         </div>
+
+    </div>
+
+    <div class='grid grid-flow-dense grid-cols-4 col-span-3 gap-2   '>  
    
-    {% for product in collection.products %}
+        {% for product in collection.products %}
                 {% render 'product-card'  with {product: product} %}
             {% endfor %}
     </div>
