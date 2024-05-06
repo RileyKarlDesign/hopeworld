@@ -41,6 +41,14 @@
         "title": "Wax",
         "body": "Olive wax is a fantastic, high quality wax with a slow burn time. We have found that it’s the most sustainable wax form out there because:\nThe industry is smaller than other wax industries thus can be easily policed.\nThe wax comes from the olives themselves meaning the same crop can be used year on year, unlike soy wax which is dug up and replanted after each season.\nUnlike paraffin wax which contains traces of petrol, olive wax is vegan and burns totally clean.\nOlive wax is a byproduct of the olive oil industry, so something that originally would have been wasted is being reused\nWhilst most waxes come from South America, Olive wax is imported from Italy so our carbon footprint remains small."
       }
+    },
+    "about_block_TN8LDD": {
+      "type": "about-block",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/furb3.png",
+        "title": "",
+        "body": ""
+      }
     }
   },
   "order": [
@@ -49,6 +57,7 @@
     "about_block_nmb3RY",
     "about_block_WVhC3m",
     "about_block_rezKPc",
-    "about_block_hXwTTX"
+    "about_block_hXwTTX",
+    "about_block_TN8LDD"
   ]
 }
