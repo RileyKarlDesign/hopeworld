@@ -1,12 +1,13 @@
 <div class='pt-28 p-2'>
-    {% if collection.all_produ/docs/themes/tools/theme-check/checks/unclosed-html-elementcts_count > 0 %}
+    {% if collection.all_products_count > 0 %}
         <div class=' flex justify-center align-center'>
             {% assign cc = collection.title %}
 
             {% for link in linklists.side-menu.links %}
                 <li class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></li>
-                {% endfor %}
-    
+            {% endfor %}
+
+            <div>
             {% for collection in collections %}
 
                 {% if cc == collection.title %}
@@ -18,7 +19,7 @@
                 {% endif %}
 
             {% endfor %}
-
+  
         </div>
 
      </div>
