@@ -1,26 +1,32 @@
-<div class='grid grid-cols-5 pt-28 p-2'>
-{% if collection.all_products_count > 0 %}
-    <div>
+<div class='pt-28 p-2'>
+    {% if collection.all_produ/docs/themes/tools/theme-check/checks/unclosed-html-elementcts_count > 0 %}
+        <div class=' flex justify-center align-center'>
+            {% assign cc = collection.title %}
 
-        <div class=' flex flex-col'>
- 
-            {% assign currentCollection = collection.title %}
-     
+            {% for link in linklists.side-menu.links %}
+                <li class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></li>
+                {% endfor %}
+    
             {% for collection in collections %}
-                
-                {% if currentCollection = collection.title %}
-                    <a class=' opacity-80 ' href='{{ collection.url  }}' >  active   {{- collection.title  }} </a>
-                {% else %}
-                    <a class=' text-green-500 '  href='{{ collection.url  }}' >  {{- collection.title  }} </a>
+
+                {% if cc == collection.title %}
+                    <a class='text-stone-300' href='{{ collection.url  }}' >   {{ collection.title  }} </a>
+                {% endif %}
+
+                {% if cc != collection.title %}
+                    <a class=' '  href='{{ collection.url  }}' >  {{ collection.title  }} </a>
                 {% endif %}
 
             {% endfor %}
 
-         </div>
+        </div>
 
-    </div>
+     </div>
+ 
 
-    <div class='grid grid-flow-dense grid-cols-4 col-span-3 gap-2   '>  
+  
+
+    <div class='grid grid-flow-dense grid-cols-5 col-span-4 gap-2   '>  
    
         {% for product in collection.products %}
                 {% render 'product-card'  with {product: product} %}
@@ -28,7 +34,5 @@
     </div>
 {% else %}
     <p>Sorry, there are no products in this collection</p>
-
-
 {% endif %}
 </div>
