@@ -2,30 +2,24 @@
     {% if collection.all_products_count > 0 %}
         <div class=' flex justify-center align-center'>
             {% assign cc = collection.title %}
-
-            {% for link in linklists.side-menu.links %}
-                <li class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></li>
-            {% endfor %}
-
+               
             <div>
-            {% for collection in collections %}
+                {{ collection.title }}
+                
+            {% for link in linklists.side-menu.links %}
 
-                {% if cc == collection.title %}
-                    <a class='text-stone-300' href='{{ collection.url  }}' >   {{ collection.title  }} </a>
+                {% if cc == link.title %}
+                    <a class='text-stone-300' href='{{ link.url  }}' >   {{ link.title  }} </a>
                 {% endif %}
 
-                {% if cc != collection.title %}
-                    <a class=' '  href='{{ collection.url  }}' >  {{ collection.title  }} </a>
+                {% if cc != link.title %}
+                    <a class='none-active'  href='{{ link.url }}' >  {{ link.title  }} </a>
                 {% endif %}
 
             {% endfor %}
   
         </div>
-
      </div>
- 
-
-  
 
     <div class='grid grid-flow-dense grid-cols-5 col-span-4 gap-2   '>  
    
