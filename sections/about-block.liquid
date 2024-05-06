@@ -3,12 +3,22 @@
 
   
 
-      <div class="asolute flex justify-center align-center top-1 h-screen left-1 right-1 overflow-hidden">
+      <div class=" flex ">
 
-      <div class='p-48 object-fit'>
-        {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
-     
+
+        <div class='w-full '>
+          <div class='object-contain'>
+            {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
+          </div>
+        </div>
+
+        <div class='w-full p-4'>
+
+         <p> {{ section.settings.title }} </p>
+        <p class='text-[16px] '> {{ section.settings.body }} </p>
+        
       </div>
+
       </div>
 
    
@@ -24,12 +34,17 @@
       {
         "type": "image_picker",
         "id": "image_1",
-        "label": "Image One"
+        "label": "Image"
+      },
+      {
+        "type": "text",
+        "id": "title",
+        "label": "title"
       },
       {
         "type": "textarea",
-        "id": "img_text_1",
-        "label": "Image One Text"
+        "id": "body",
+        "label": "Text"
       }
     ],
 
