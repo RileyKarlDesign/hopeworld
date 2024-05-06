@@ -25,12 +25,30 @@
         "title": "About Hope",
         "body": "Hopeworld is an idyllic land that runs parallel to our universe, filled with cheeky mythical creatures and bright colours, instead of destructive humans and grey buildings. We’ve managed to pluck some of the land’s most bizarre characters out of Hopeworld and brought them to our own realm in candle form. \n\nOur candles are made with the environment at its heart. Each candle is made using olive wax which is more sustainable than common waxes such as soy and paraffin. Olive wax has a long and clean burn, and we use non-toxic pure essential oils as scent, so you don’t have to worry about harming yourself or the environment as you burn our candles."
       }
+    },
+    "about_block_rezKPc": {
+      "type": "about-block",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/c7dc5eb81e99555839e11675b643dad4_eebcc466-0645-4caa-b57a-35b2ddaa1893.jpg",
+        "title": "Sustainability",
+        "body": "Sustainability is a hugely important aspect to Hopeworld. Below are some details of the sustainable choices we make and why we make them."
+      }
+    },
+    "about_block_hXwTTX": {
+      "type": "about-block",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/bunny3.png",
+        "title": "Wax",
+        "body": "Olive wax is a fantastic, high quality wax with a slow burn time. We have found that it’s the most sustainable wax form out there because:\nThe industry is smaller than other wax industries thus can be easily policed.\nThe wax comes from the olives themselves meaning the same crop can be used year on year, unlike soy wax which is dug up and replanted after each season.\nUnlike paraffin wax which contains traces of petrol, olive wax is vegan and burns totally clean.\nOlive wax is a byproduct of the olive oil industry, so something that originally would have been wasted is being reused\nWhilst most waxes come from South America, Olive wax is imported from Italy so our carbon footprint remains small."
+      }
     }
   },
   "order": [
     "main",
     "form",
     "about_block_nmb3RY",
-    "about_block_WVhC3m"
+    "about_block_WVhC3m",
+    "about_block_rezKPc",
+    "about_block_hXwTTX"
   ]
 }
