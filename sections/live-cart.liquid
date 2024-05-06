@@ -3,23 +3,24 @@
 
 
 
-<div class="my-cart  w-[300px] fixed right-2 top-2 p-2 rounded-lg">
+<div class="my-cart rounded-t-lg overflow-scroll z-50">
+  <div class='pl-2 pt-1 w-full 0  '>
     <h2>Cart ({{ cart.item_count }})</h2>
-  
-    <div class="my-cart__items flex flex-col gap-2 ">
+  </div>
+    <div class="my-cart__items flex gap-2 p-2">
       <!-- Loop through cart items -->
       {% for line_item in cart.items %}
         {% assign line_item_index = forloop.index %}
        
-        <div class='card relative bg-white overflow-hidden  flex rounded-sm  bg-opacity-65'>
-          <p>{{ line_item.title }}</p>
-            {{ line_item.image | image_url: width: 80 | image_tag }}
-
+        <div class='card relative bg-red-500 overflow-hidden  w-fit h-full  rounded-sm  bg-opacity-65'>
+            <div class=' w-40'>
+            {{ line_item.image | image_url: width: 40 | image_tag }}
+            </div>
             <div class='card p-2  ' >
         <a href="{{ line_item.url }}">{{ line_item.title | escape }}</a>
         <div> <p> Price: {{ line_item.final_price | money }} </p></div>
     
-        <div>
+        <div class='flex'>
         <p>
           Quantity:
         </p>
@@ -57,44 +58,17 @@
     </div>
     
     {% form 'cart', cart, id: 'my-ajax-cart-form' %}
-      <button type="submit" name="checkout">
+    <div class='p-2'>
+      <button class='p-2 bg-stone-500 w-fit' type="submit" name="checkout">
          Checkout — {{ cart.total_price | money_with_currency }}
       </button> 
+      </div>
     {% endform %}
+
+
   </div>
 
-  <script>
-   let cart = document.querySelector('.my-cart'),
-        cartBtn = document.querySelector('#cart-btn'),
-        artState = true ;
 
-       let closeCart= ()=> {
-        cart.classList.remove('cart-open')
-        cart.classList.add('cart-closed')
-      };
-
-      let openCart= ()=> {
-        cart.classList.remove('bg-blue-500')
-        cart.classList.add('bg-red-500')
-      };
-
-       cartBtn.addEventListener('click', ()=> {
-        
-        console.log('click')
-        
-        if(cartState){
-          cartState = false;
-          closeCart()
-        }else {
-          cartState = true;
-          openCart()
-        }
-
-    }
   
-  
-    })
-   
-  </script>
   
   {% schema %} { "name": "My Ajax cart" } {% endschema %} 
