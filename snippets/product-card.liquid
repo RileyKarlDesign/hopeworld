@@ -5,6 +5,8 @@
     {% if product.featured_image %}
         <div class=' h-full rounded-sm bg-stone-50 overflow-hidden'>
             {{ product.featured_image | image_url: width: 700 | image_tag }}
+            {{ product.custom.card_colour }}
+           
         </div>
     {% endif %}
 </div>
