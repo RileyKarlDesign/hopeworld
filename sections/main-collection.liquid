@@ -1,8 +1,8 @@
-<div class='pt-28 p-2'>
+<div class=' p-2'>
     {% if collection.all_products_count > 0 %}
     {% render 'shop-filters' %}
 
-    <div class='grid grid-flow-dense grid-cols-5 col-span-4 gap-2 pt-20 pb-20   '>  
+    <div class='grid grid-flow-dense grid-cols-5 col-span-4 gap-2 pt-16 pb-20   '>  
    
         {% for product in collection.products %}
                 {% render 'product-card'  with {product: product} %}

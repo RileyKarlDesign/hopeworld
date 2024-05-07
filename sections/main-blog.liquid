@@ -1,6 +1,11 @@
-<ul> 
+<div class='grid grid-cols-4 pt-28 p-2'>
   {% for article in blog.articles %}
-    {{ article.featured_image | image_url: width: 700 | image_tag }}
-  <li><a href="{{ article.url }}">{{ article.title }}</a></li>
+    <div>
+      <div class=''>
+      {{ article.image | image_url: width: 700 | image_tag }}
+      </div>
+    
+      <p><a href="{{ article.url }}">{{ article.title }}</a></p>
+    </div>
   {% endfor %}
-</ul>
+</div>
