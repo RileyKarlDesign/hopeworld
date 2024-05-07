@@ -634,6 +634,10 @@ video {
   top: 6rem;
 }
 
+.top-12 {
+  top: 3rem;
+}
+
 .z-50 {
   z-index: 50;
 }
@@ -975,6 +979,10 @@ video {
   --tw-bg-opacity: 0.65;
 }
 
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
@@ -986,6 +994,10 @@ video {
 
 .p-2 {
   padding: 0.5rem;
+}
+
+.p-20 {
+  padding: 5rem;
 }
 
 .p-4 {
@@ -1064,6 +1076,14 @@ video {
   padding-top: 2px;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
+}
+
 .text-center {
   text-align: center;
 }
@@ -1130,6 +1150,16 @@ video {
   outline-style: solid;
 }
 
+.blur-lg {
+  --tw-blur: blur(16px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.blur {
+  --tw-blur: blur(8px);
+  filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
 .grayscale {
   --tw-grayscale: grayscale(100%);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
@@ -1137,6 +1167,17 @@ video {
 
 .filter {
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
+}
+
+.backdrop-blur-lg {
+  --tw-backdrop-blur: blur(16px);
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+}
+
+.backdrop-filter {
+  -webkit-backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
+          backdrop-filter: var(--tw-backdrop-blur) var(--tw-backdrop-brightness) var(--tw-backdrop-contrast) var(--tw-backdrop-grayscale) var(--tw-backdrop-hue-rotate) var(--tw-backdrop-invert) var(--tw-backdrop-opacity) var(--tw-backdrop-saturate) var(--tw-backdrop-sepia);
 }
 
 .transition {
@@ -1160,8 +1201,8 @@ div {
   font-family: r;
 }
 
-ul, h1,button,input {
-  font-size: 15px ;
+ul, h1,button,input, label {
+  font-size: 13px ;
   letter-spacing: -.7px;
   color: rgba(12, 12, 12, 0.829);
   font-family: 'rounded', Courier, monospace;
@@ -1194,8 +1235,21 @@ img{
   max-height: calc(120vh);
 }
 
-.featuredProductImage{
-  filter: grayscale(100%) brightness(0);
+@keyframes mymove {
+  from {
+    webkit-filter: grayscale(100%) brightness(0);
+    filter: grayscale(100%) brightness(0);
+  }
+
+  to {
+    webkit-filter: grayscale(0%) brightness(100%);
+    filter: grayscale(0%) brightness(100%);
+  }
+}
+
+.featuredProductImage > img{
+  animation-name: mymove;
+  animation-duration: 1s;
 }
 
 /*  Cart  */

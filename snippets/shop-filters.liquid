@@ -1,4 +1,8 @@
-<div class=' sticky top-14 flex justify-center gap-4 align-center'>
+<div class=' sticky top-14 flex justify-center gap-4 align-center  '>
+
+
+    <div class=' flex gap-4 w-fit h-fit p-2 pl-4 pr-4 bg-stone-50 bg-opacity-50 rounded-lg  backdrop-blur-lg'>
+      
     {% assign cc = collection.title %}
         
             {% for link in linklists.side-menu.links %}
@@ -12,5 +16,5 @@
                 {% endif %}
 
             {% endfor %}
-        
+    </div>
 </div>

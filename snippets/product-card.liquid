@@ -1,20 +1,21 @@
 <div class="flex flex-col    pt-2 ">
 <a href="{{ product.url }}" >
-<div class="  ">
+<div class=" ">
 
     {% if product.featured_image %}
-        <div class=' h-full rounded-sm bg-stone-50 overflow-hidden'>
+        <div  class=' featuredProductImage h-full rounded-sm bg-stone-50 overflow-hidden'>
             {{ product.featured_image | image_url: width: 700 | image_tag }}
            
            
         </div>
     {% endif %}
 </div>
-<div class='pt-2 pb-6'>
+<div class=' pt-2 pb-6'>
     <p >{{ product.title }} </p>
     <p> {{ product.price | money_with_currency }} </p>
     <p> {{ product.compare_at_price | money_with_currency }} </p>
-    <p>  {{ product.custom.card_colour }} </p>
 </div>
+
+
 </a>
 </div>

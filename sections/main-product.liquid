@@ -3,22 +3,35 @@
 <div class="flex  h-screen"> 
     <div class="w-full"> 
 
-    {% for image in product.images %}
+        {% for image in product.images %}
 
-        {{ image | image_url: width: 700 | image_tag }}
+            {{ image | image_url: width: 700 | image_tag }}
 
-        {% endfor %}
+            {% endfor %}
     </div>
 
+    <div class=" p-20 pt-40 w-[400px] " > 
 
-    <div class="w-full p-2 pt-40 " > 
+        <h2>  {{product.title}} </h2>
+        <p> {{ product.description }}</p>
 
-    <p>  {{product.title}} </p>
+        <div class='grid grid-cols-2'>  
+        <p> Width </p>
+        <p> {{ product.metafields.custom.width }} </p>
+        </div>
 
-    <p> {{ product.description }}</p>
-    <p>  {{ product.custom.card_colour }} </p>
-    {% render 'add-to-cart-form' with current_variant: current_variant  %}
-    
+        <div class='grid grid-cols-2'>  
+        <p> Height </p>
+        <p> {{ product.metafields.custom.height }} </p>
+        </div>
+
+        <div class='grid grid-cols-2'>  
+        <p> Burn Time </p>
+        <p> {{ product.metafields.custom.burn_time }} </p>
+        </div>
+
+        {% render 'add-to-cart-form' with current_variant: current_variant  %}
 
     </div>
+
 </div>
