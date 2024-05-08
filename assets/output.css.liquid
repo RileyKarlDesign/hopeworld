@@ -618,6 +618,10 @@ video {
   top: 0.25rem;
 }
 
+.top-12 {
+  top: 3rem;
+}
+
 .top-14 {
   top: 3.5rem;
 }
@@ -632,10 +636,6 @@ video {
 
 .top-24 {
   top: 6rem;
-}
-
-.top-12 {
-  top: 3rem;
 }
 
 .z-50 {
@@ -971,16 +971,16 @@ video {
   --tw-bg-opacity: 0.05;
 }
 
+.bg-opacity-50 {
+  --tw-bg-opacity: 0.5;
+}
+
 .bg-opacity-60 {
   --tw-bg-opacity: 0.6;
 }
 
 .bg-opacity-65 {
   --tw-bg-opacity: 0.65;
-}
-
-.bg-opacity-50 {
-  --tw-bg-opacity: 0.5;
 }
 
 .object-contain {
@@ -1032,8 +1032,16 @@ video {
   padding-left: 0.5rem;
 }
 
+.pl-4 {
+  padding-left: 1rem;
+}
+
 .pr-2 {
   padding-right: 0.5rem;
+}
+
+.pr-4 {
+  padding-right: 1rem;
 }
 
 .pt-1 {
@@ -1074,14 +1082,6 @@ video {
 
 .pt-\[2px\] {
   padding-top: 2px;
-}
-
-.pl-4 {
-  padding-left: 1rem;
-}
-
-.pr-4 {
-  padding-right: 1rem;
 }
 
 .text-center {
@@ -1150,13 +1150,13 @@ video {
   outline-style: solid;
 }
 
-.blur-lg {
-  --tw-blur: blur(16px);
+.blur {
+  --tw-blur: blur(8px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
-.blur {
-  --tw-blur: blur(8px);
+.blur-lg {
+  --tw-blur: blur(16px);
   filter: var(--tw-blur) var(--tw-brightness) var(--tw-contrast) var(--tw-grayscale) var(--tw-hue-rotate) var(--tw-invert) var(--tw-saturate) var(--tw-sepia) var(--tw-drop-shadow);
 }
 
@@ -1255,7 +1255,6 @@ img{
 /*  Cart  */
 
 .my-cart{
-  background: rgb(193, 193, 193);
   width: calc( 100vw );
   cursor: pointer;
   position: fixed;
