@@ -22,7 +22,8 @@
     {{ content_for_header }}
     {{ 'style.css' | asset_url | stylesheet_tag }}
     {{ 'output.css' | asset_url | stylesheet_tag }}
-
+  
+   
     
 </head>
 <body id="{{ page_title | handle }}" class=" template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
@@ -41,6 +42,13 @@
 
     <script src="{{ 'shop.js' | asset_url }}" defer></script>
     <script src="{{ 'cart.js' | asset_url }}" defer></script>
+
+    <link
+        rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+      />
+      
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
    
 </body>
 </html>
