@@ -8,9 +8,17 @@
       <div class='p-48 object-fit'>
         {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
         <p>
-          1 / 12
+          {{ section.settings.img_text_1 }}
           </p>
       </div>
+
+      <div class='p-48 object-fit'>
+        {{ section.settings.image_2 | img_url: '2048x' | img_tag }}
+        <p>
+          {{ section.settings.img_text_2}}
+          </p>
+      </div>
+
       </div>
 
    
