@@ -11,9 +11,9 @@
       "type": "two-images",
       "settings": {
         "image_1": "shopify:\/\/shop_images\/kid3_1.png",
-        "img_text_1": "",
+        "img_text_1": "Name Here",
         "image_2": "shopify:\/\/shop_images\/bunny3.png",
-        "img_text_2": ""
+        "img_text_2": "Name Here"
       }
     }
   },
