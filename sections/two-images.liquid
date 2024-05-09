@@ -1,0 +1,55 @@
+
+  
+
+  
+
+      <div class="asolute flex justify-center align-center top-1 h-screen left-1 right-1 overflow-hidden">
+
+      <div class='p-48 object-fit'>
+        {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
+        <p>
+          1 / 12
+          </p>
+      </div>
+      </div>
+
+   
+
+
+
+
+{% schema %}
+
+  {
+    "name": "Two Images",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "Image One"
+      },
+      {
+        "type": "text",
+        "id": "img_text_1",
+        "label": "Image One Text"
+      },
+      {
+        "type": "image_picker",
+        "id": "image_2",
+        "label": "Image Two"
+      },
+      {
+        "type": "text",
+        "id": "img_text_2",
+        "label": "Image Two Text"
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "TwoImages ",
+        "category": "Content"
+      }
+    ]
+  }
+{% endschema %}
