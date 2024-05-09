@@ -1,16 +1,19 @@
 
 
 <div class="flex  h-screen"> 
-    <div class="w-full"> 
+    <div class="w-full p-20"> 
 
         {% for image in product.images %}
-
+            <div class=" object-contain bg-stone-50"> 
             {{ image | image_url: width: 700 | image_tag }}
-
+            </div>
             {% endfor %}
+
     </div>
 
-    <div class=" p-20 pt-40 w-[400px] " > 
+    <div class=" p-20 pt-40 w-full h-screen flex align-middle  " > 
+
+        <div class=' w-[400px] sticky top-0'>
 
         <h2>  {{product.title}} </h2>
         <p> {{ product.description }}</p>
@@ -33,5 +36,6 @@
         {% render 'add-to-cart-form' with current_variant: current_variant  %}
 
     </div>
+</div>
 
 </div>
