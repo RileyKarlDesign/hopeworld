@@ -13,7 +13,11 @@ module.exports = {
  
   ],},
   theme: {
-    extend: {},
+    extend: {
+      aspectRatio: {
+        'main': '4 / 5',
+      },
+    },
   },
   plugins: [],
 }
