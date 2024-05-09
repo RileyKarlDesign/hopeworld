@@ -1,21 +1,5 @@
 {
   "sections": {
-    "hero_home_hPrMPx": {
-      "type": "hero-home",
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/385092443_190587863989959_7521087001731185493_n.jpg",
-        "img_text_1": "Image Text"
-      }
-    },
-    "two_images_btajzm": {
-      "type": "two-images",
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/8_alex_valentina_alexvxvxvxvx_web_2.jpg",
-        "img_text_1": "Name Here",
-        "image_2": "shopify:\/\/shop_images\/3_alex_valentina_alexvxvxvxvx_web_2.jpg",
-        "img_text_2": "Name Here"
-      }
-    },
     "slideshow_k7nVMy": {
       "type": "slideshow",
       "blocks": {
@@ -39,11 +23,27 @@
       "settings": {
         "title": "Slideshow"
       }
+    },
+    "hero_home_hPrMPx": {
+      "type": "hero-home",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/385092443_190587863989959_7521087001731185493_n.jpg",
+        "img_text_1": "Image Text"
+      }
+    },
+    "two_images_btajzm": {
+      "type": "two-images",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/8_alex_valentina_alexvxvxvxvx_web_2.jpg",
+        "img_text_1": "Name Here",
+        "image_2": "shopify:\/\/shop_images\/3_alex_valentina_alexvxvxvxvx_web_2.jpg",
+        "img_text_2": "Name Here"
+      }
     }
   },
   "order": [
+    "slideshow_k7nVMy",
     "hero_home_hPrMPx",
-    "two_images_btajzm",
-    "slideshow_k7nVMy"
+    "two_images_btajzm"
   ]
 }
