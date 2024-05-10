@@ -40,8 +40,12 @@
     {% comment %} Somewhere in layout/theme.liquid {% endcomment %}
     {% section 'footer' %}
     <script type="application/json" data-ajax-cart-initial-state>
-     {{ cart | json }}
-    </script>
+        {{ cart | json }}
+      </script>
+      
+      <script type="module">
+        import '{{ "liquid-ajax-cart-v2.1.0.js" | asset_url }}';
+      </script>
 
 
   <script
@@ -49,9 +53,8 @@
     type="module"
     defer></script>
     <script src="{{ 'cart.js' | asset_url }}" defer></script>
-  
     
-    
-   
+
+
 </body>
 </html>
