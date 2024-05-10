@@ -25,8 +25,12 @@ function runWhenInit() {
   document.addEventListener('DOMContentLoaded',function () {
 
 
+  let elSwiper = doument.querySelector('.swiper')
+
+  console.log('here')
+
   // core version + navigation, pagination modules:
-  const swiper = new Swiper('.swiper', {
+  const swiper = new Swiper( elSwiper, {
     // Optional parameters
     direction: 'vertical',
     loop: true,
