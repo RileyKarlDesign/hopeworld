@@ -1,0 +1,46 @@
+<div class="flex flex-col  relative   pt-2 ">
+    <div class='card relative bg-red-500 overflow-hidden  w-full h-full  rounded-sm  bg-opacity-65'>
+        <div class=' w-40'>
+        {{ line_item.image | image_url: width: 700 | image_tag }}
+        </div>
+        <div class='card p-2  ' >
+    <a href="{{ line_item.url }}">{{ line_item.title | escape }}</a>
+    <div> <p> Price: {{ line_item.final_price | money }} </p></div>
+
+    <div class='flex'>
+    <p>
+      Quantity:
+    </p>
+      <!-- "Minus one" button -->
+      <a href="{{ routes.cart_change_url }}?line={{ line_item_index }}&quantity={{ line_item.quantity | minus: 1 }}" > 
+        -
+      </a>
+
+      <!-- Item quantity input -->
+      <input 
+        class=' text-center '
+        name="updates[]" 
+        value="{{ line_item.quantity }}" 
+        type="number" 
+        form="my-ajax-cart-form" />
+
+      <!-- "Plus one" button -->
+      <a href="{{ routes.cart_change_url }}?line={{ index }}&quantity={{ line_item.quantity | plus: 1 }}"> 
+        +
+      </a>
+    </div>
+
+    <div> <p> Total: {{ line_item.final_line_price | money }}</p> </div>
+
+    <!-- "Remove item" button -->
+    <a class=' leading-none flex align-middle justify-center absolute right-2 top-2 bg-white p-2 rounded-full h-7 w-7' href="{{ line_item.url_to_remove }}">
+      x
+    </a>
+
+</div>
+
+    
+</div>
+
+</div>
+    
