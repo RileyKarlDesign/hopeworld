@@ -19,7 +19,7 @@
       </div> 
 
 
-        <div class=" grid grid-cols-4 gap-2 p-2"> 
+        <div class=" grid grid-cols-4 gap-2 p- pb-10"> 
             {% for image in product.images %}
                 <div class=" object-contain bg-stone-50   "> 
                 {{ image | image_url: width: 700 | image_tag }}
