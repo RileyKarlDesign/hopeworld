@@ -11,6 +11,7 @@
 /* width */
 ::-webkit-scrollbar {
   width: 0px;
+  height: 0;
   position: fixed;
 }
 
@@ -130,25 +131,56 @@ img{
 
 
 .body-wrap{
-  max-height: 100%;
-  border: 2px solid rgb(0, 255, 4);
-  overflow: hidden;
+
+  background-color: white;
+  overflow: scroll;
+   
 }
 
+.body-inactive{
+  opacity: .4;
+}
 
 .my-cart{
   
   width: calc( 100vw  );
   cursor: pointer;
-  display: grid;
-  grid-template-rows: 0fr;
-  /* position: fixed; */
+  height: 400px;
   transition: ease all 0.3s ;
+  overflow: hidden;
 
 }
-
+ 
 .cart-open{
+  height:600px;
   overflow: scroll;
-  grid-template-rows: 1fr;
  transition: ease all 0.3s ;
+}
+
+ajax-cart-product-form[processing]:before {
+  content: 'Loading';
+  display: block;
+}
+
+/* Make the "Add to cart" button look visually disabled while loading */
+ajax-cart-product-form[processing] [type="submit"] {
+  opacity: .7;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.my-cart__items {
+  opacity: 1;
+  transition: opacity .2s;
+}
+
+/* Make the cart content look visually disabled while updating */
+html.js-ajax-cart-processing .my-cart__items {
+  opacity: .7;
+}
+
+/* Show a loading indicator */
+html.js-ajax-cart-processing .my-cart__items:before {
+  content: 'Loading';
+  display: block;
 }

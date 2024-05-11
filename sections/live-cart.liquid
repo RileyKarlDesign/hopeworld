@@ -3,35 +3,32 @@
 
 
 
-<div class="my-cart bg-stone-50 text-stone-900 backdrop-blur-lg h-full ">
-  <div class='p-2  w-full flex justify-between 0'>
+<div class="my-cart bg-orange-400  relative" data-ajax-cart-section>
+  <div class="my-cart__items grid p-2 grid-cols-8 gap-2" data-ajax-cart-section-scroll>
+    <!-- Loop through cart items -->
+    {% for line_item in cart.items %}
 
-    <h2>Cart ({{ cart.item_count }})</h2>
-    <h2> Total - {{ cart.total_price | money_with_currency }} </h2>
-   </div>
-
- <div class="my-cart__items grid grid-cols-4 gap-2 p-2">
-      <!-- Loop through cart items -->
-      {% for line_item in cart.items %}
-        
-        {% render 'product-card'  with {product: line_item, index: forloop.index } %}
-       
-      {% endfor %}
-      
-    </div>
-    
-    {% form 'cart', cart, id: 'my-ajax-cart-form' %}
-    <div class='p-2'>
-      <button class='h-16 pl-10 pr-10 bg-red-500 w-fit' type="submit" name="checkout">
-         Checkout — {{ cart.total_price | money_with_currency }}
-      </button>  
-      </div>
-    {% endform %}
-
-
+      {% render 'cart-card' with { product: line_item , index: forloop.index } %}
+    {% endfor %}
   </div>
 
+<div class=' cart-footer flex gap-2 justify-center align-middle absolute bottom-2  w-full '> 
 
-  
-  
-  {% schema %} { "name": "My Ajax cart" } {% endschema %} 
+    <div class='flex w-fit h-fit p-2 bg-stone-50 bg-opacity-50 rounded-lg  backdrop-blur-lg'>
+        <h2 class='cart-btn'>Close</h2>
+    </div>
+
+  {% form 'cart', cart, id: 'my-ajax-cart-form' %}
+    <button class='flex w-fit h-fit p-2 bg-stone-800 bg-opacity-50 rounded-lg  backdrop-blur-lg'  type="submit" name="checkout">
+      Checkout — {{ cart.total_price | money_with_currency }}
+    </button> 
+  {% endform %}
+
+</div>
+
+
+</div>
+
+
+
+{% schema %} { "name": "My Ajax cart" } {% endschema %}

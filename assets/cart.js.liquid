@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded',function () {
         $addToCartButton.disabled = false;
         $quantity.dataset.max = $maxQuantity;
       } else {
-        $id.value = 'dick'; 
+        $id.value = 'null'; 
         $addToCartButton.disabled = true; 
       }
     },
@@ -118,6 +118,17 @@ document.addEventListener('DOMContentLoaded',function () {
   productForm.init();
 
   // Quanity
+
+  let atc = document.querySelectorAll(".js-atc");
+
+  console.log( atc )
+
+  atc.forEach( (i) => {
+    i.addEventListener('click', ()=> {
+      i.PpreventDefault()
+      console.alert('prevented')
+    })
+  })
 
   let plus = document.querySelector(".js-quantity-add");
   let minus = document.querySelector(".js-quantity-minus");
@@ -178,11 +189,23 @@ document.addEventListener('DOMContentLoaded',function () {
   });
 });
 
+document.addEventListener('liquid-ajax-cart:request-end', event => {
+  const {requestState} = event.detail;
+
+  // If the "add to cart" request is successful
+  if (requestState.requestType === 'add' && requestState.responseData?.ok) {
+
+    // Add the CSS class to the "body" tag
+    document.body.classList.add('js-show-ajax-cart');
+  }
+});
+
+
 document.addEventListener('DOMContentLoaded',function () {
 
   let cart = document.querySelector('.my-cart');
   let bodyWrap = document.querySelectorAll('.body-wrap')
-  let cartBtn = document.querySelector('#cart-btn');
+  let cartBtns = document.querySelectorAll('.cart-btn');
   let cartState = false ;
 
      let closeCart= ()=> {
@@ -197,23 +220,28 @@ document.addEventListener('DOMContentLoaded',function () {
 
     };
 
-    cartBtn.addEventListener('click', ()=> {  
 
-      console.log('clikc')
-      
-      if(cartState){
-        console.log('colse')
-        cartState = false;
-        closeCart();
-      } else { 
-          console.log('open')
-        cartState = true;
-        openCart();
-      }
 
-    });
+    cartBtns.forEach( (i) => {
+      i.addEventListener('click', ()=> {  
 
-  })
+        console.log('clikc')
+        
+        if(cartState){
+          console.log('colse')
+          cartState = false;
+          closeCart();
+        } else { 
+            console.log('open')
+          cartState = true;
+          openCart();
+        }
+  
+      });
+  
+    })
 
+    
+    })
 
 // btn

@@ -32,9 +32,9 @@
         <p> Burn Time </p>
         <p> {{ product.metafields.custom.burn_time }} </p>
         </div>
-
-        {% render 'add-to-cart-form' with current_variant: current_variant  %}
-
+        <ajax-cart-product-form>
+          {% render 'add-to-cart-form' with current_variant: current_variant  %}
+         </ajax-cart-product-form>
     </div>
 </div>
 

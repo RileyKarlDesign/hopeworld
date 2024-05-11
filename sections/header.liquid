@@ -1,4 +1,4 @@
-<div class='flex align-middle justify-center p-[10px] sticky top-2 bg-red-500 z-50 w-full '> 
+<div class='flex align-middle justify-center p-[10px] sticky top-2  z-50 w-full '> 
     <div class=' h-14 w-fit absolute left-2 top-2 ' >
         <a href="/"> {{  shop.brand.logo | image_url: width: 700 | image_tag }} </a>
     </div>
@@ -6,8 +6,14 @@
         {% for link in linklists.main-menu.links %} 
           <h2 class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></h2>
         {% endfor %}
-        <div class='flex justify-end w-fit h-fit cursor-pointer' id='cart-btn' >
-          <h2 class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'> Cart [ {{ cart.item_count }} ]</h2>
+        <div class='flex justify-end w-fit h-fit cursor-pointer cart-btn'>
+          <h2 class='w-fit  h-fit  pt-[2px] pl-2 pr-2'>Cart(
+          <span data-ajax-cart-bind="item_count" class="header__cart-quantity pointer-events-none">
+             {{ cart.item_count }} 
+          </span> )
+        </h2>
+      
+
       </div>
     </div>
 </div>
