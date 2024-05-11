@@ -3,21 +3,21 @@
 
 
 
-<div class="my-cart flex-grow bg-opacity-80 bg-stone-500 backdrop-blur-lg   overflow-scroll ">
+<div class="my-cart flex-grow  bg-stone-50 text-stone-900 backdrop-blur-lg   overflow-scroll ">
   <div class='p-2  w-full flex justify-between 0'>
 
     <h2>Cart ({{ cart.item_count }})</h2>
     <h2> Total - {{ cart.total_price | money_with_currency }} </h2>
    </div>
 
- <div class="my-cart__items flex gap-2 p-2">
+ <div class="my-cart__items grid grid-cols-4 gap-2 p-2">
       <!-- Loop through cart items -->
       {% for line_item in cart.items %}
         {% assign line_item_index = forloop.index %}
        
-        <div class='card relative bg-red-500 overflow-hidden  w-fit h-full  rounded-sm  bg-opacity-65'>
+        <div class='card relative bg-red-500 overflow-hidden  w-full h-full  rounded-sm  bg-opacity-65'>
             <div class=' w-40'>
-            {{ line_item.image | image_url: width: 40 | image_tag }}
+            {{ line_item.image | image_url: width: 700 | image_tag }}
             </div>
             <div class='card p-2  ' >
         <a href="{{ line_item.url }}">{{ line_item.title | escape }}</a>

@@ -132,7 +132,7 @@ img{
 .body-wrap{
   max-height: 100%;
   border: 2px solid rgb(255, 242, 0);
-  overflow: scroll;
+  overflow: hidden;
 }
 
 
@@ -140,16 +140,15 @@ img{
   
   width: calc( 100vw  );
   cursor: pointer;
-  height: 0;
+  display: grid;
+  grid-template-rows: 0fr;
   /* position: fixed; */
   transition: ease all 0.3s ;
 
 }
 
 .cart-open{
-
-  height: 50vh;
- top: 120px;
-
+  overflow: scroll;
+  grid-template-rows: 1fr;
  transition: ease all 0.3s ;
 }
