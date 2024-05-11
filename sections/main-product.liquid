@@ -1,40 +1,59 @@
 
 
-    <div class=" grid grid-col-8"> 
-        <div class=" grid grid-col-8 bg-red-500 p-20"> 
+    <div class=""> 
+
+
+    <div class='flex flex-col justify-end absolute align-top w-screen p-8 top-1 pointer-events-none bg-opacity-25 h-screen'>
+        <div class='flex w-[100%] h-fit p-2 justify-center align-middle '>
+          
+            <button
+            style='background-color:{{ product.metafields.custom.acsent_color }}  '
+            form="add-to-cart-form "
+            class=" w-[29%] bg-opacity-50 rounded-lg p-2 backdrop-blur-lg  "
+            type="submit"
+            name="add"
+            id="add-to-cart-button">
+            Add to cart 
+        </button>
+      </div>
+      </div> 
+
+
+        <div class=" grid grid-cols-4 gap-2 p-2"> 
             {% for image in product.images %}
-                <div class=" object-contain bg-stone-50 "> 
+                <div class=" object-contain bg-stone-50   "> 
                 {{ image | image_url: width: 700 | image_tag }}
+                <p> {{ forloop.index }} </p>
                 </div>
             {% endfor %}
         </div>
 
 
-    <div class=" p-20 pt-40 w-full h-screen flex align-middle  " > 
+    <div class=" flex flex-co gap-4 align-middle justify-center" > 
 
-        <div class=' w-[400px] sticky top-0'>
+<div class=' w-[25%] col-start-2 col-span-1 bp-40  '>
+        
+     <div class='  pb-4'>
+                <div class='pb-4'>   
+                <h2>  {{product.title}} </h2>
+            </div>
+            <p> {{ product.description }}</p>
+    </div>
 
-        <h2>  {{product.title}} </h2>
-        <p> {{ product.description }}</p>
 
-        <div class='grid grid-cols-2'>  
-        <p> Width </p>
-        <p> {{ product.metafields.custom.width }} </p>
-        </div>
-
-        <div class='grid grid-cols-2'>  
-        <p> Height </p>
-        <p> {{ product.metafields.custom.height }} </p>
-        </div>
-
-        <div class='grid grid-cols-2'>  
-        <p> Burn Time </p>
-        <p> {{ product.metafields.custom.burn_time }} </p>
-        </div>
-        <ajax-cart-product-form>
+    <div class='  pb-4'>
+        {% render 'info-line' with { title: 'Width', value: product.metafields.custom.width  }  %}
+        {% render 'info-line' with { title: 'Height', value: product.metafields.custom.height  }  %}
+        {% render 'info-line' with { title: 'Burn Time', value: product.metafields.custom.burn_time }  %}
+    
+    
+        <ajax-cart-product-form> 
           {% render 'add-to-cart-form' with current_variant: current_variant  %}
          </ajax-cart-product-form>
+        </div>
     </div>
 </div>
+
+
 
 </div>

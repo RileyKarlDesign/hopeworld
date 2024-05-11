@@ -73,11 +73,12 @@ current_variant
   <input
     type=""
     name="id"
-    class='js-variant-id'
+    class='js-variant-id hidden'
     value={{product.variants.first.id}}>
-  <div class="product-price">
+  <div class="product-price grid  pt-1 pb-1 grid-cols-2 border-t-2 border-stone-50 ">
     <p class="grey">
-      Price</p>
+      Price
+    </p>
 
     <ul>
       {% if product.compare_at_price > 0 %}
@@ -88,18 +89,19 @@ current_variant
           {{ product.price | money_with_currency }}
         </p>
       {% else %}
-        <p class="js-price" data-default-price="{{ product.price | money }}">{{ current_variant.price | money }}</p>
+
+        <p class="js-price" data-default-price="{{ product.price | money }}">{{ product.price | money }}</p>
       {% endif %}
     </ul>
   </div>
 
-  <div class="product-option-row">
+  <div class="grid  pt-1 pb-1 grid-cols-2 border-t-2 border-stone-50 ">
 
     <label for="quanity" class="product-option-row-title">
       Quanity:
     </label>
 
-    <div class="js-quantity ">
+    <div class="js-quantity flex gap-2">
 
       <p class="js-quantity-minus  quantity-btn">
         -
@@ -134,16 +136,10 @@ current_variant
     value="1">
 
 
-
-  <button
-    class="hero-btn js-atc bg-red-500"
-    type="submit"
-    name="add"
-    id="add-to-cart-button">
-    Add to cart
-  </button>
-
+  
 </form>
+
+
 
 
 
