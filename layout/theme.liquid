@@ -31,10 +31,10 @@
 </head>
 <body id="{{ page_title | handle }}" class=" template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
  
-  <div class ='js-main flex flex-col  '>
+  <div class ='js-main flex flex-col h-screen '>
     {% section 'live-cart' %}
     {% comment %}  styles for body wrap are in css due tw error {% endcomment %}
-    <div class='body-wrap  '>
+    <div class='body-wrap '>
       {% section 'header' %}
         {{ content_for_layout }}
         {% section 'footer' %}
