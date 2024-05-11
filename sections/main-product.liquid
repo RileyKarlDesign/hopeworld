@@ -1,15 +1,14 @@
 
 
-<div class="flex  h-screen"> 
-    <div class="w-full p-20"> 
-
-        {% for image in product.images %}
-            <div class=" object-contain bg-stone-50"> 
-            {{ image | image_url: width: 700 | image_tag }}
-            </div>
+    <div class=" grid grid-col-8"> 
+        <div class=" grid grid-col-8 bg-red-500 p-20"> 
+            {% for image in product.images %}
+                <div class=" object-contain bg-stone-50 "> 
+                {{ image | image_url: width: 700 | image_tag }}
+                </div>
             {% endfor %}
+        </div>
 
-    </div>
 
     <div class=" p-20 pt-40 w-full h-screen flex align-middle  " > 
 

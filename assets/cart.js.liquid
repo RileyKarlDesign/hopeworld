@@ -119,16 +119,7 @@ document.addEventListener('DOMContentLoaded',function () {
 
   // Quanity
 
-  let atc = document.querySelectorAll(".js-atc");
-
-  console.log( atc )
-
-  atc.forEach( (i) => {
-    i.addEventListener('click', ()=> {
-      i.PpreventDefault()
-      console.alert('prevented')
-    })
-  })
+  
 
   let plus = document.querySelector(".js-quantity-add");
   let minus = document.querySelector(".js-quantity-minus");
@@ -229,12 +220,15 @@ document.addEventListener('DOMContentLoaded',function () {
         
         if(cartState){
           console.log('colse')
+
           cartState = false;
           closeCart();
+          console.log(cart)
         } else { 
             console.log('open')
           cartState = true;
           openCart();
+          console.log(cart)
         }
   
       });
