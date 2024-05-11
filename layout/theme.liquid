@@ -23,22 +23,26 @@
     {{ 'style.css' | asset_url | stylesheet_tag }}
     {{ 'output.css' | asset_url | stylesheet_tag }}
   
-
+    {% comment %}  swiper {% endcomment %}
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-
     <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
 
     
 </head>
 <body id="{{ page_title | handle }}" class=" template-{{ template | replace: '.', ' ' | truncatewords: 1, '' | handle }}" >
-   
-
-    {% section 'header' %}
+ 
+  <div class ='js-main flex flex-col  '>
     {% section 'live-cart' %}
-   
-    {{ content_for_layout }}
+    {% comment %}  styles for body wrap are in css due tw error {% endcomment %}
+    <div class='body-wrap  '>
+      {% section 'header' %}
+        {{ content_for_layout }}
+        {% section 'footer' %}
+    </div>
+  </div> 
+
     {% comment %} Somewhere in layout/theme.liquid {% endcomment %}
-    {% section 'footer' %}
+   
     <script type="application/json" data-ajax-cart-initial-state>
         {{ cart | json }}
       </script>
@@ -48,10 +52,7 @@
       </script>
 
 
-  <script
-    src="{{ 'shop.js' | asset_url }}"
-    type="module"
-    defer></script>
+    <script src="{{ 'shop.js' | asset_url }}" type="module" defer></script>
     <script src="{{ 'cart.js' | asset_url }}" defer></script>
     
 

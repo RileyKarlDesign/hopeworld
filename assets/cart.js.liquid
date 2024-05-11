@@ -178,4 +178,42 @@ document.addEventListener('DOMContentLoaded',function () {
   });
 });
 
+document.addEventListener('DOMContentLoaded',function () {
+
+  let cart = document.querySelector('.my-cart');
+  let bodyWrap = document.querySelectorAll('.body-wrap')
+  let cartBtn = document.querySelector('#cart-btn');
+  let cartState = false ;
+
+     let closeCart= ()=> {
+      
+      cart.classList.remove('cart-open')
+      
+    };
+
+    let openCart= ()=> {
+  
+      cart.classList.add('cart-open')
+
+    };
+
+    cartBtn.addEventListener('click', ()=> {  
+
+      console.log('clikc')
+      
+      if(cartState){
+        console.log('colse')
+        cartState = false;
+        closeCart();
+      } else { 
+          console.log('open')
+        cartState = true;
+        openCart();
+      }
+
+    });
+
+  })
+
+
 // btn

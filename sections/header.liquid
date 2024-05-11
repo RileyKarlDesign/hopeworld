@@ -1,6 +1,6 @@
-<div class='flex align-middle justify-center p-[10px] fixed z-50 w-full '> 
+<div class='flex align-middle justify-center p-[10px] sticky z-50 w-full '> 
 
-    <div class=' h-14 w-fit fixed left-2 top-2 ' >
+    <div class=' h-14 w-fit absolute left-2 top-2 ' >
         <a href="/"> {{  shop.brand.logo | image_url: width: 700 | image_tag }} </a>
     
     </div>
@@ -12,50 +12,11 @@
           <h2 class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></h2>
         {% endfor %}
 
-        <div class='flex justify-end w-fit h-fit' id='cart-btn' >
+        <div class='flex justify-end w-fit h-fit cursor-pointer' id='cart-btn' >
           <h2 class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'> Cart [ {{ cart.item_count }} ]</h2>
       </div>
-      
+       
     </div>
 
 </div>
 
-<script>
- 
-    document.addEventListener('DOMContentLoaded',function () {
-
-    let cart = document.querySelector('.my-cart');
-    let cartBtn = document.querySelector('#cart-btn');
-    let cartState = false ;
-
-       let closeCart= ()=> {
-        
-        cart.classList.remove('cart-open')
-        
-      };
-
-      let openCart= ()=> {
-    
-        cart.classList.add('cart-open')
-
-      };
-
-      cartBtn.addEventListener('click', ()=> {  
-
-        console.log('clikc')
-        
-        if(cartState){
-          console.log('colse')
-          cartState = false;
-          closeCart();
-        } else { 
-            console.log('open')
-          cartState = true;
-          openCart();
-        }
-
-      });
-
-    })
-
-  </script>

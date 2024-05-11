@@ -3,11 +3,14 @@
 
 
 
-<div class="my-cart  bg-opacity-80 bg-yellow-500 backdrop-blur-lg   overflow-scroll z-50">
-  <div class='pl-2 pt-1 w-full 0  '>
+<div class="my-cart flex-grow bg-opacity-80 bg-stone-500 backdrop-blur-lg   overflow-scroll ">
+  <div class='p-2  w-full flex justify-between 0'>
+
     <h2>Cart ({{ cart.item_count }})</h2>
-  </div>
-    <div class="my-cart__items flex gap-2 p-2">
+    <h2> Total - {{ cart.total_price | money_with_currency }} </h2>
+   </div>
+
+ <div class="my-cart__items flex gap-2 p-2">
       <!-- Loop through cart items -->
       {% for line_item in cart.items %}
         {% assign line_item_index = forloop.index %}
@@ -59,9 +62,9 @@
     
     {% form 'cart', cart, id: 'my-ajax-cart-form' %}
     <div class='p-2'>
-      <button class='p-2 bg-stone-500 w-fit' type="submit" name="checkout">
+      <button class='h-16 pl-10 pr-10 bg-red-500 w-fit' type="submit" name="checkout">
          Checkout — {{ cart.total_price | money_with_currency }}
-      </button> 
+      </button>  
       </div>
     {% endform %}
 

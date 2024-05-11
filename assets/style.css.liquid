@@ -2,8 +2,30 @@
 @tailwind components;
 @tailwind utilities;
 
+
+
 *{ 
 }
+
+/*  custom scroll bar   */
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+  position: fixed;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
 
 @font-face {
     font-family: rounded;
@@ -25,8 +47,9 @@
     
 }
 
- h2 {
-  font-size: 16px ;
+
+ h2,button{
+  font-size: 16px  ;
     letter-spacing: -.7px;
   font-family: 'rounded', Courier, monospace;
 }
@@ -42,16 +65,22 @@ p {
   width: 100%;
 }
 
-.swiper-slide {
-  background-size: cover;
-  background-position: 50%;
-  min-height: 20vh;
-  
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
+
+.ticket{
+  width: 200px;
+  opacity: 0;
 }
+
+.active-ticket{
+  opacity: 100!important;
+}
+
+.swiper-slide > img {
+
+
+}
+
+
 
 
 
@@ -99,21 +128,27 @@ img{
 
 /*  Cart  */
 
+
+.body-wrap{
+  border: 2px solid blue;
+  overflow: scroll;
+}
+
+
 .my-cart{
   
-  width: calc( 100vw );
+  width: calc( 100vw  );
   cursor: pointer;
-  position: fixed;
-  top: 100vw;
-  bottom: 0px;
-  left: 0px;
-  right: 10px;
+  height: 0;
+  /* position: fixed; */
   transition: ease all 0.3s ;
 
 }
 
 .cart-open{
- top: 50vh;
- right: 10px;
+
+  height: 50vh;
+ top: 120px;
+
  transition: ease all 0.3s ;
 }
