@@ -2,23 +2,18 @@
 
 // error of unkowen module is bs 
 
-const swiper = new Swiper('.swiper', {
+const swiper = new Swiper('.product-swiper', {
     // Optional parameters
-    spaceBetween: 1,
-    slidesPerView: 3,
+  
+    slidesPerView: 'auto',
     centeredSlides: true,
     roundLengths: true,
-    loop: true,
-    loopAdditionalSlides: 30,
+    loop: false,
+    mousewheelControl: true,
+    spaceBetween: 0, 
+    slideToClickedSlide: true,
     
 
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
   
-    // And if we need scrollbar
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
+    
   });
