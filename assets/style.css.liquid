@@ -6,6 +6,17 @@
 
 *{ 
 }
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
 
 /*  custom scroll bar   */
 /* width */
@@ -39,28 +50,20 @@
 
 
 
- ul, h1,button,input ,label {
-    font-size: 13px ;
-    letter-spacing: -.7px;
-
-   color: rgba(12, 12, 12, 0.829);
-    font-family: 'rounded', Courier, monospace;
-    
-}
-
 
  h2,button {
-  color: rgba(12, 12, 12, 0.829);
   font-size: 14px  ;
-    letter-spacing: -.2px;
+  letter-spacing: -.2px;
   font-family: 'rounded', Courier, monospace;
   text-transform: uppercase;
 }
 
-p {
-  font-size: 13px ;
-  font-weight: 600;
-  font-family: 'rounded', Courier, monospace;
+p,label,ul,input{
+  font-size: 15px ;
+  line-height: 23px;
+  font-weight:500;
+  letter-spacing:.4px;
+  font-family: Helvetica, sans-serif, Courier, monospace;
 }
 .caption {
   font-size: 10px;
