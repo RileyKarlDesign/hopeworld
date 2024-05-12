@@ -1,29 +1,5 @@
 {
   "sections": {
-    "slideshow_k7nVMy": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_4LxDbF": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/3_alex_valentina_alexvxvxvxvx_web_2.jpg"
-          }
-        },
-        "slide_yUeyYQ": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/315743207_185918627322498_7774961245136592156_n_1.jpg"
-          }
-        }
-      },
-      "block_order": [
-        "slide_4LxDbF",
-        "slide_yUeyYQ"
-      ],
-      "settings": {
-        "title": "Slideshow"
-      }
-    },
     "hero_home_hPrMPx": {
       "type": "hero-home",
       "settings": {
@@ -42,7 +18,6 @@
     }
   },
   "order": [
-    "slideshow_k7nVMy",
     "hero_home_hPrMPx",
     "two_images_btajzm"
   ]
