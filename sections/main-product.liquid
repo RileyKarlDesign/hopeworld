@@ -33,7 +33,7 @@
                                 <div class='bg-stone-50'>
                                     {{ image | image_url: width: 700 | image_tag }}      
                                 </div>      
-                                    <p class='caption pt-2'> {{ forloop.index }} </p>            
+                                    <p class='caption pt-2'> {{ forloop.index }} / {{ forloop.length }}  here </p>            
                                 </div>
                             </div>
                 
@@ -47,9 +47,11 @@
                             <div class="swiper-pagination"></div>
                         
                             <!-- If we need navigation buttons -->
-                            <div class="swiper-button-prev"></div>
-                            <div class="swiper-button-next"></div>
-                        
+
+                            <div class='bg-red-500'>
+                                <div class="swiper-button-prev"></div>
+                                <div class="swiper-button-next"></div>
+                            </div>
                             <!-- If we need scrollbar -->
                           
                         </div>
