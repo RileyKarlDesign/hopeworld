@@ -14,6 +14,22 @@ module.exports = {
   ],},
   theme: {
     extend: {
+      colors: {
+        c1: "#ececec",
+        c2: "#f4f4f4e8",
+        c3: "#1f1f1f",
+        c4: "#7b7b7b",
+      },
+
+      width: {
+        'base': '423.875px',
+      },
+
+      height:{
+        'el': '40px'
+      },
+
+
       aspectRatio: {
         'main': '4 / 5',
       },

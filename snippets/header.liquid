@@ -1,11 +1,7 @@
 
-<div class=' h-12 w-fit absolute left-2 top-2 z-50' >
-    <a href="/"> {{  shop.brand.logo | image_url: width: 700 | image_tag }} </a>
-</div>
-  
   
   <div class=' HEADER HERE flex align-middle bg-opacity-40 justify-center  z-50 w-full sticky top-2  '> 
-      <div class='flex w-fit h-fit p-2 bg-stone-50 bg-opacity-50 rounded-lg  backdrop-blur-lg'>
+      <div class='flex w-fit h-el p-2 bg-c1 bg-opacity-50 rounded-lg  backdrop-blur-lg'>
           {% for link in linklists.main-menu.links %} 
             <h2 class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></h2>
           {% endfor %}
@@ -18,5 +14,7 @@
           </div> 
       </div>
   </div> 
+
+  
 
 
