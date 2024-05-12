@@ -1,8 +1,8 @@
 
 
 <div class=""> 
-    <div class='flex flex-col justify-end items-center absolute w-screen h-screen top-0 p-8 pointer-events-none  z-50'>
-         <div class='flex w-[30%] h-fit relative justify-center align-middle rounded-lg overflow-hidden'  >
+    <div class='flex flex-col justify-end items-center absolute w-screen h-screen top-0 p-8 pt-0 pointer-events-none  z-50'>
+         <div class='flex w-[407.609px] h-fit relative justify-center align-middle rounded-lg overflow-hidden'  >
             <div class=' btnbg absolute  inset-0 opacity-70 ' style='background-color:{{ product.metafields.custom.acsent_color }}' >
             </div>   
              <button             
@@ -17,8 +17,7 @@
     </div> 
 
 
-        <div class="pt-10 pb-10 p-2"> 
-
+        <div class="pb-10 "> 
 
                         <!-- Slider main container -->
                         <div class="swiper ">
@@ -33,21 +32,18 @@
                                 <div class='bg-stone-50'>
                                     {{ image | image_url: width: 700 | image_tag }}      
                                 </div>      
-                                    <p class='caption pt-2'> {{ forloop.index }} / {{ forloop.length }}  here </p>            
+                                    <p class='caption pt-2'> {{ forloop.index }} / {{ forloop.length }}  </p>            
                                 </div>
                             </div>
                 
                 
                             {% endfor %}
 
-
-                            ...
                             </div>
                             <!-- If we need pagination -->
                             <div class="swiper-pagination"></div>
                         
                             <!-- If we need navigation buttons -->
-
                             <div class='bg-red-500'>
                                 <div class="swiper-button-prev"></div>
                                 <div class="swiper-button-next"></div>

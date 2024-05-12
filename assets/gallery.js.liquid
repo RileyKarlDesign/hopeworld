@@ -4,24 +4,18 @@
 
 const swiper = new Swiper('.swiper', {
     // Optional parameters
-    loop: false,
-    direction: 'horizontal',
-    slidesPerView: 3.3,
-    paginationClickable: true,
-    spaceBetween: 10,
-    mousewheelControl: true,
-    parallax: true,
-    speed: 600,
+    spaceBetween: 1,
+    slidesPerView: 3,
     centeredSlides: true,
-  
-    // If we need pagination
+    roundLengths: true,
+    loop: true,
+    loopAdditionalSlides: 30,
+    
 
-  
-    // Navigation arrows
-    // navigation: {
-    //   nextEl: '.swiper-button-next',
-    //   prevEl: '.swiper-button-prev',
-    // },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
   
     // And if we need scrollbar
     scrollbar: {
