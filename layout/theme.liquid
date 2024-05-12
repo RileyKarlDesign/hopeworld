@@ -34,11 +34,13 @@
   <div class ='js-main flex  overflow-hidden flex-col h-screen '>
     {% section 'live-cart' %}
     {% comment %}  styles for body wrap are in css due tw error {% endcomment %}
-    <div class='body-wrap  '>
-      {% section 'header' %}
-        {{ content_for_layout }}
-        {% section 'footer' %}
-    </div>
+      <div class='body-wrap  '>
+          <div class=''>
+              {% render 'header' %}
+                    {{ content_for_layout }}
+                {% section 'footer' %}
+              </div> 
+         </div>
   </div> 
 
     {% comment %} Somewhere in layout/theme.liquid {% endcomment %}
@@ -54,6 +56,7 @@
 
     <script src="{{ 'shop.js' | asset_url }}" type="module" defer></script>
     <script src="{{ 'cart.js' | asset_url }}" defer></script>
+    <script src="{{ 'gallery.js' | asset_url }}" defer></script>
     
 
 
