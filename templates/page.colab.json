@@ -11,11 +11,13 @@
         "slide_nkeywt": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/solid-color-image_2.png"
           }
         },
         "slide_BMx7M8": {
           "type": "slide",
           "settings": {
+            "image": "shopify:\/\/shop_images\/solid-color-image_3.png"
           }
         }
       },
