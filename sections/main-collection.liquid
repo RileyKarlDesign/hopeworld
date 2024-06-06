@@ -3,7 +3,7 @@
     {% if collection.all_products_count > 0 %}
      {% render 'shop-filters' %}
 
-    <div class='grid grid-flow-dense md:grid-cols-4 sm:grid-cols-3  grid-cols-2  gap-2 pt-2 pb-2 [&>*:nth-child(3n+0)]:col-span-2 [&>*:nth-child(3n+0)]:row-span-2    '>  
+    <div class='grid grid-flow-dense md:grid-cols-4 sm:grid-cols-3  grid-cols-2  gap-2 pt-4 pb-2 [&>*:nth-child(3n+0)]:col-span-2 [&>*:nth-child(3n+0)]:row-span-2   '>  
    
         {% for product in collection.products %}
              {% render 'product-card'  with {product: product} %}
