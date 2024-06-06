@@ -1,10 +1,36 @@
 {
-    "sections": {
-        "main": {
-            "type": "main-colab"
-        }
+  "sections": {
+    "main": {
+      "type": "main-colab",
+      "settings": {
+      }
     },
-    "order": [
-        "main"
-    ]
+    "slideshow_and_text_AQijbL": {
+      "type": "slideshow-and-text",
+      "blocks": {
+        "slide_nkeywt": {
+          "type": "slide",
+          "settings": {
+          }
+        },
+        "slide_BMx7M8": {
+          "type": "slide",
+          "settings": {
+          }
+        }
+      },
+      "block_order": [
+        "slide_nkeywt",
+        "slide_BMx7M8"
+      ],
+      "settings": {
+        "title": "Adidas Collaboration",
+        "body": ""
+      }
+    }
+  },
+  "order": [
+    "main",
+    "slideshow_and_text_AQijbL"
+  ]
 }
