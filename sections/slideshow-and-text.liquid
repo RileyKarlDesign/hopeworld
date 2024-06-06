@@ -4,10 +4,12 @@
 
     {% for block in section.blocks %}
       {% case block.type %}
-        {% when 'slide' %}
-          <div class="ticket" {{ block.shopify_attributes }}>
-            {{ block.settings.image | image_url: width: 2048 | image_tag }}
-      {% endcase %}
+      {% when 'slide' %}
+        <div class="ticket" {{ block.shopify_attributes }}>
+          {{ block.settings.image | image_url: width: 2048 | image_tag }}
+        </div>
+      
+    {% endcase %}
     {% endfor %}
 
     
