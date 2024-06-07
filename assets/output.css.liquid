@@ -853,6 +853,14 @@ video {
   height: 100vh;
 }
 
+.w-1 {
+  width: 0.25rem;
+}
+
+.w-1\/2 {
+  width: 50%;
+}
+
 .w-10 {
   width: 2.5rem;
 }
@@ -916,14 +924,6 @@ video {
 
 .w-screen {
   width: 100vw;
-}
-
-.w-1\/2 {
-  width: 50%;
-}
-
-.w-1 {
-  width: 0.25rem;
 }
 
 .flex-shrink {
@@ -1061,6 +1061,10 @@ video {
 
 .justify-between {
   justify-content: space-between;
+}
+
+.gap-1 {
+  gap: 0.25rem;
 }
 
 .gap-2 {
@@ -1785,8 +1789,8 @@ div {
 h2,button {
   font-size: 14px  ;
   letter-spacing: -.2px;
-  font-family: 'rounded', Courier, monospace;
-  text-transform: uppercase;
+  font-weight: 500;
+  font-family: 'Helvetica Neue', Courier, monospace;
 }
 
 p,label,ul,input{
@@ -1794,7 +1798,7 @@ p,label,ul,input{
   line-height: 16px;
   font-weight: medium;
   letter-spacing:.4px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 .caption {
@@ -1866,6 +1870,10 @@ img{
 .featuredProductImage > img{
   animation-name: mymove;
   animation-duration: 1s;
+}
+
+.product-card:hover .featuredProductImage{
+  filter: grayscale(100%) brightness(0);
 }
 
 .icon{
@@ -1943,8 +1951,8 @@ html.js-ajax-cart-processing .my-cart__items:before {
 }
 
 @media (min-width: 768px) {
-  .md\:grid-cols-4 {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+  .md\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
   }
 
   .md\:grid-cols-8 {
@@ -1952,10 +1960,10 @@ html.js-ajax-cart-processing .my-cart__items:before {
   }
 }
 
-.\[\&\>\*\:nth-child\(3n\+0\)\]\:col-span-2>*:nth-child(3n+0) {
+.\[\&\>\*\:nth-child\(-2n\+1\)\]\:col-span-2>*:nth-child(-2n+1) {
   grid-column: span 2 / span 2;
 }
 
-.\[\&\>\*\:nth-child\(3n\+0\)\]\:row-span-2>*:nth-child(3n+0) {
+.\[\&\>\*\:nth-child\(-2n\+1\)\]\:row-span-2>*:nth-child(-2n+1) {
   grid-row: span 2 / span 2;
 }
