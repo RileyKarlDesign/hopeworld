@@ -2024,6 +2024,18 @@ html.js-ajax-cart-processing .my-cart__items:before {
   .md\:grid-cols-8 {
     grid-template-columns: repeat(8, minmax(0, 1fr));
   }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+.\[\&\>\*\:nth-child\(-1n\+1\)\]\:col-span-2>*:nth-child(-1n+1) {
+  grid-column: span 2 / span 2;
+}
+
+.\[\&\>\*\:nth-child\(-2n\)\]\:col-span-2>*:nth-child(-2n) {
+  grid-column: span 2 / span 2;
 }
 
 .\[\&\>\*\:nth-child\(-2n\+1\)\]\:col-span-2>*:nth-child(-2n+1) {
