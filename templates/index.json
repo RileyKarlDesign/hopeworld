@@ -4,8 +4,10 @@
       "type": "two-images",
       "settings": {
         "image_1": "shopify:\/\/shop_images\/429803118_2156216304721522_75563958028303685_n.jpg",
+        "product_1": "duder",
         "img_text_1": "Name Here",
         "image_2": "shopify:\/\/shop_images\/432322625_383032431169148_5541695079705217873_n.jpg",
+        "product_2": "goblin",
         "img_text_2": "Name Here"
       }
     },
