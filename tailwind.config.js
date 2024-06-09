@@ -32,11 +32,15 @@ module.exports = {
       height:{
         'el': '40px'
       },
-
+      animation: {
+        'spin-slow': 'spin 3s linear infinite',
+      },
 
       aspectRatio: {
         'main': '4 / 5',
       },
+
+      
     },
   },
   plugins: [],

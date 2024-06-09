@@ -3,11 +3,11 @@
 
   
 
-      <div class="asolute  overflow-visible gap-2 grid md:grid-cols-2 grid-cols-1 align-center top-1 h-screen left-1 right-1 overflow-hidden">
+      <div class="asolute  overflow-visible  grid md:grid-cols-2 grid-cols-1 align-center top-1 h-screen left-1 right-1 overflow-hidden">
 
       <div class=' overflow-visible '>
-        <div class=' bg-stone-50 overflow-visible '>
-          {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
+        <div class=' bg-stone-50 overflow-visible w-64 '>
+          {{ section.settings.image_1 | img_url: '2048x' | img_tag: class="w-64"}}
           </div>
         <p>
           {{ section.settings.img_text_1 }}
@@ -15,7 +15,7 @@
       </div>
 
       <div class=' '>
-        <div class=' bg-stone-50  rotate- '>
+        <div class=' bg-stone-50 h-full'>
         {{ section.settings.image_2 | img_url: '2048x' | img_tag }}
         </div>
         <p>
