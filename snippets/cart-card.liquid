@@ -15,7 +15,8 @@
            {% render 'info-line' with { title: 'Price', value:  price  }  %}
 
             
-            <div class='grid grid-cols-2 gap-2  border-t-2 border-c2' >
+            <div class='grid grid-cols-2 p-1 gap-2  border-t-2 border-dotted border-c2' >
+
               <p>
 
               Quantity 
@@ -54,7 +55,7 @@
             <div data-ajax-cart-errors="{{ product.key }}"></div>
             {% assign total = product.final_line_price | money %}
 
-            {% render 'info-line' with { title: 'Total', value:  total }  %} 
+            {% comment %} {% render 'info-line' with { title: 'Total', value:  total }  %}  {% endcomment %}
            
             <!-- "Remove item" button -->
             <div class='flex  justify-center items-center'>
