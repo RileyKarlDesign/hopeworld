@@ -21,9 +21,15 @@
   </div>
 
 {% form 'cart', cart, id: 'my-ajax-cart-form' %}
-  <button class='flex w-fit h-el  pl-4 pr-4 justify-center items-center bg-c1 bg-opacity-50 rounded-lg  backdrop-blur-lg '  type="submit" name="checkout">
-    Checkout — {{ cart.total_price | money_with_currency }}
+
+
+  <button  class='flex w-fit h-el  pl-4 pr-4 justify-center items-center bg-green-400 bg-opacity-50 border-2 border-black border-dotted   backdrop-blur-lg '  type="submit" name="checkout">
+    Checkout — <span data-ajax-cart-bind="total_price | money_with_currency" >{{ cart.total_price | money_with_currency }}</span>
   </button> 
+
+
+
+
 {% endform %}
 
 </div>
