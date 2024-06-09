@@ -14,34 +14,12 @@
       "settings": {
         "image_1": "shopify:\/\/shop_images\/bunny8.png",
         "title": "Title text",
-        "body": "blah alksjflkasjd"
-      }
-    },
-    "hero_home_hPrMPx": {
-      "type": "hero-home",
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/385092443_190587863989959_7521087001731185493_n.jpg",
-        "img_text_1": "Image Text"
-      }
-    },
-    "four_images_WwfPN4": {
-      "type": "four-images",
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/solid-color-image_2.png",
-        "img_text_1": "Image One",
-        "image_2": "shopify:\/\/shop_images\/solid-color-image_1.png",
-        "img_text_2": "Image two",
-        "image_3": "shopify:\/\/shop_images\/solid-color-image_3.png",
-        "img_text_3": "Image three",
-        "image_4": "shopify:\/\/shop_images\/solid-color-image.png",
-        "img_text_4": "Image Four"
+        "body": ""
       }
     }
   },
   "order": [
     "two_images_btajzm",
-    "about_block_hDwwtB",
-    "hero_home_hPrMPx",
-    "four_images_WwfPN4"
+    "about_block_hDwwtB"
   ]
 }
