@@ -3,6 +3,7 @@
     "open_statement_with_image_WRHwWP": {
       "type": "open-statement-with-image",
       "settings": {
+        "image_1": "shopify:\/\/shop_images\/408832282_342993735015836_7656652148227607904_n.jpg",
         "body": "This is the opening statement with the lead image of the contnent"
       }
     },
