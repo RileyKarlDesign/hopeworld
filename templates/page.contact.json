@@ -4,13 +4,7 @@
       "type": "open-statement-with-image",
       "settings": {
         "image_1": "shopify:\/\/shop_images\/408832282_342993735015836_7656652148227607904_n.jpg",
-        "body": "This is the opening statement with the lead image of the contnent"
-      }
-    },
-    "open_statement_zHWGVm": {
-      "type": "open-statement",
-      "settings": {
-        "body": "Hello this is Hope World, this is the opening statement to the page.  Hello this is Hope World, this is the opening statement to the page. Hello this is Hope World, this is the opening statement to the page.  Hello this is Hope World, this is the opening statement to the page."
+        "body": "Hopeworld is an idyllic land that runs parallel to our universe, filled with cheeky mythical creatures and bright colours, instead of destructive humans and grey buildings. We’ve managed to pluck some of the land’s most bizarre characters out of Hopeworld and brought them to our own realm in candle form."
       }
     },
     "main": {
@@ -66,7 +60,6 @@
   },
   "order": [
     "open_statement_with_image_WRHwWP",
-    "open_statement_zHWGVm",
     "main",
     "form",
     "about_block_nmb3RY",
