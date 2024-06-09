@@ -1,5 +1,11 @@
 {
   "sections": {
+    "open_statement_with_image_WRHwWP": {
+      "type": "open-statement-with-image",
+      "settings": {
+        "body": "This is the opening statement with the lead image of the contnent"
+      }
+    },
     "open_statement_zHWGVm": {
       "type": "open-statement",
       "settings": {
@@ -58,6 +64,7 @@
     }
   },
   "order": [
+    "open_statement_with_image_WRHwWP",
     "open_statement_zHWGVm",
     "main",
     "form",
