@@ -14,9 +14,13 @@
 
     {% endif %}
 </div>
-<div class=' absolute bottom-2 left-2'>
-    <p> {{ product.title }} </p>
-    <p class='opacity-50' > {{ product.price | money }} </p>
+<div class='  bottom-2 left-2'>
+
+
+    {% render 'info-line' with { title:'Name', value: product.title } %}
+    {% render 'info-line' with { title:'Price', value:  product.price | money  } %}
+
+    <p class='opacity-50' >  </p>
     <p> {{ product.compare_at_price | money_with_currency }} </p>
 </div>
 

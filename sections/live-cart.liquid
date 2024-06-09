@@ -2,39 +2,43 @@
 
 
 
-<div class="my-cart bg-c3   relative" >
-  <div class="" data-ajax-cart-section >
-    <div class="my-cart__items grid p-2 grid-cols-4 gap-2" data-ajax-cart-section-scroll >
-      <!-- Loop through cart items -->
-      {% for line_item in cart.items %}
-
-        {% render 'cart-card' with { product: line_item , index: forloop.index } %}
-      {% endfor %}
-    </div> 
-
-  </div>
-
-  <div class=' cart-footer flex gap-2 justify-center align-middle absolute bottom-2  w-full '> 
-
-  <div class='flex w-fit h-el pl-4 pr-4 justify-center items-center bg-c1  rounded-lg  backdrop-blur-lg'>
-      <h2 class='cart-btn'>Close</h2>
-  </div>
+<div class="my-cart relative bg-c1 border-2 border-black border-dotted h-full p-2" >
 
 {% form 'cart', cart, id: 'my-ajax-cart-form' %}
-
-
-  <button  class='flex w-fit h-el  pl-4 pr-4 justify-center items-center bg-green-400 bg-opacity-50 border-2 border-black border-dotted   backdrop-blur-lg '  type="submit" name="checkout">
-    Checkout — <span data-ajax-cart-bind="total_price | money_with_currency" >{{ cart.total_price | money_with_currency }}</span>
-  </button> 
-
-
-
-
+    <div class="p-2 fixed z-50 bottom-0 left-0 right-0">
+      <button  class='flex w-full h-el select-none   pl-4 pr-4 justify-center items-center bg-green-400 bg-opacity-50 border-2 border-black border-dotted   backdrop-blur-lg '  type="submit" name="checkout">
+        Checkout — <span data-ajax-cart-bind="total_price | money_with_currency" >{{ cart.total_price | money_with_currency }}</span>
+      </button>
+    </div>
 {% endform %}
 
-</div>
+  <div class='flex fixed top-2 right-2 w-fit h-el pl-4 z-50 pr-4 justify-center items-center bg-c1  bg-opacity-50  border-2 border-dotted border-black backdrop-blur-lg'>
+    <h2 class='cart-btn'>Close</h2>
+  </div>
+
+
+
+  <div class=" overflow-scroll h-full" data-ajax-cart-section >
+
+
+    <div class="my-cart__items flex flex-col gap-2" data-ajax-cart-section-scroll >
+      <!-- Loop through cart items -->
+
+      {% for line_item in cart.items %}
+        {% render 'cart-card' with { product: line_item , index: forloop.index } %}
+      {% endfor %}
+
+
+    </div> 
+
+ 
+
+
+  </div>
+
 
 </div>
+
 
 
 

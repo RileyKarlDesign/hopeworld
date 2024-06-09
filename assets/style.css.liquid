@@ -187,19 +187,30 @@ img{
 
 .my-cart{
   
-  width: calc( 100vw  );
+  position: fixed ; 
+  top: 110vh;
+  bottom:20px;
+  right: -200px;
+  rotate:20deg;
+  z-index: 10000;
+  width: calc( 350px );
   cursor: pointer;
-  height: 0px;
   transition: ease all 0.3s ;
   overflow: hidden;
-
-
+  opacity: 0;
+  overflow : hidden
 }
  
 .cart-open{
-  height:600px;
-  overflow: scroll;
+  height: 90vh;
+  top: 5vh;
+  bottom:20px;
+  right: 50px;
+  rotate:-3deg;
+  z-index: 10000;
+  overflow : hidden;
   transition: ease all 0.3s ;
+  opacity: 100;
  
 }
 
