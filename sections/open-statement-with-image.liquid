@@ -1,0 +1,44 @@
+
+  
+
+  
+
+      <div class="flex pt-14 p-2  ">
+
+        <div class="w-full">
+          <div class=' bg-stone-50 overflow-visible w-64 '>
+            {{ section.settings.image_1 | img_url: '2048x' | img_tag: class="w-64"}}
+            </div>
+        
+        </div>
+    
+         <h1 class=''> {{ section.settings.body }} </h1>
+         
+      </div>
+
+   
+{% schema %}
+
+  {
+    "name": "Open Statement & Image",
+    "settings": [
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "Image One"
+      },
+      {
+        "type": "textarea",
+        "id": "body",
+        "label": "Text"         
+      }
+    ],
+
+    "presets": [
+      {
+        "name": "Open Statement & Image",
+        "category": "Content"
+      }
+    ]
+  }
+{% endschema %}
