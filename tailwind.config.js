@@ -30,7 +30,7 @@ module.exports = {
       },
 
       height:{
-        'el': '40px'
+        'el': '50px'
       },
       animation: {
         'spin-slow': 'spin 3s linear infinite',
