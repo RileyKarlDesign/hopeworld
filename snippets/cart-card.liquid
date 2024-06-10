@@ -1,4 +1,4 @@
-<div class="flex flex-col  relative  ">
+<div class="flex flex-col  relative h-fit  pb-4 ">
   {% comment %}  Image {% endcomment %}
   <a href="{{ product.url }}">
    <div class='featuredProductImage bg-slate-50 h-fit rounded-sm overflow-hidden '>
@@ -14,17 +14,20 @@
    {% comment %}  info start  {% endcomment %}   
    <div class='pb-6 p-2  flex justify-between w-full  ' >
 
-      <div class="price">
-        <p>  {{ product.title }}  </p>
-         <p class='opacity-50 '>  {{ product.price | money }} </p>
+      <div class="price  w-full ">
 
-     </div>
+        {% assign price = product.price | money %}
 
-       
-       
-     <div class="quanity">
+        {% render 'info-line' with { title: 'Name', value: product.title } %}
+        {% render 'info-line' with { title: 'Price', value: price } %}
+
+     <div class="quanity flex p-1 border-t-2 border-black border-dotted ">
+      <div class="w-full ">
+        <p> Quantity </p>
+      </div>
        <ajax-cart-quantity>
-         <div class='flex w-fit items-center justify-center'>
+        {% comment %}  width wont change for some reason  {% endcomment %}
+         <div class='flex w-40'>
          <!-- "Minus one" button -->
                <a data-ajax-cart-quantity-minus class=' pb-1 hover:bg-stone-800 hover:text-white text-bold h-5 w-5 bg-stone-500 bg-opacity-10 flex justify-center items-center text-center rounded-full backdrop-blur-md '
                  href="{{ routes.cart_change_url }}?line={{ index }}&quantity={{ product.quantity | minus: 1 }}" >
@@ -59,6 +62,8 @@
          </a>
        </p>
        </div> 
+     </div>
+
      </div>
 
    </div>

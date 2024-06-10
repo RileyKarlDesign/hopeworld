@@ -881,6 +881,10 @@ video {
   height: 100vh;
 }
 
+.h-\[50vh\] {
+  height: 50vh;
+}
+
 .w-1 {
   width: 0.25rem;
 }
@@ -1220,6 +1224,11 @@ video {
   border-color: #cccccce8;
 }
 
+.border-c3 {
+  --tw-border-opacity: 1;
+  border-color: rgb(35 35 35 / var(--tw-border-opacity));
+}
+
 .border-green-500 {
   --tw-border-opacity: 1;
   border-color: rgb(34 197 94 / var(--tw-border-opacity));
@@ -1267,6 +1276,11 @@ video {
 .bg-c4 {
   --tw-bg-opacity: 1;
   background-color: rgb(255 213 1 / var(--tw-bg-opacity));
+}
+
+.bg-gray-100 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity));
 }
 
 .bg-gray-50 {
@@ -1535,6 +1549,10 @@ video {
   padding-bottom: 2rem;
 }
 
+.pb-\[20vh\] {
+  padding-bottom: 20vh;
+}
+
 .pl-10 {
   padding-left: 2.5rem;
 }
@@ -1629,6 +1647,10 @@ video {
 
 .text-center {
   text-align: center;
+}
+
+.indent-0 {
+  text-indent: 0px;
 }
 
 .align-top {
@@ -1758,6 +1780,14 @@ video {
 
 .underline {
   text-decoration-line: underline;
+}
+
+.opacity-0 {
+  opacity: 0;
+}
+
+.opacity-100 {
+  opacity: 1;
 }
 
 .opacity-20 {
@@ -1924,9 +1954,9 @@ div {
 }
 
 h1 {
-  font-size: 50px  ;
+  font-size: 48px  ;
   letter-spacing: -.2px;
-  line-height: 50px;
+  line-height: 48px;
   font-weight: 500;
   font-family: 'Helvetica Neue', Courier, monospace;
   text-indent: 100px;
@@ -2005,20 +2035,22 @@ img{
   from {
     webkit-filter: grayscale(100%) brightness(0);
     filter: grayscale(100%) brightness(0);
+    pointer-events:none;
   }
 
   to {
     webkit-filter: grayscale(0%) brightness(100%);
     filter: grayscale(0%) brightness(100%);
+    pointer-events:all;
   }
 }
 
 .featuredProductImage > img{
   animation-name: mymove;
-  animation-duration: 1s;
+  animation-duration: 2s;
 }
 
-.product-card:hover .featuredProductImage{
+.product-card:hover .featuredProductImage  > img {
   filter: grayscale(100%) brightness(0);
 }
 
@@ -2115,6 +2147,10 @@ html.js-ajax-cart-processing .my-cart__items:before {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.group:hover .group-hover\:opacity-100 {
+  opacity: 1;
 }
 
 @media (min-width: 640px) {

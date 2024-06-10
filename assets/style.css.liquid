@@ -49,9 +49,9 @@ input[type=number] {
   }
 
   h1 {
-    font-size: 50px  ;
+    font-size: 48px  ;
     letter-spacing: -.2px;
-    line-height: 50px;
+    line-height: 48px;
     font-weight: 500;
     font-family: 'Helvetica Neue', Courier, monospace; 
     text-indent: 100px;
@@ -140,23 +140,27 @@ img{
 
 
 @keyframes mymove {
-  from {webkit-filter: grayscale(100%) brightness(0);
-    filter: grayscale(100%) brightness(0);}
+  from {
+    webkit-filter: grayscale(100%) brightness(0);
+    filter: grayscale(100%) brightness(0);
+    pointer-events:none;
+    ;}
   to {webkit-filter: grayscale(0%) brightness(100%);
-    filter: grayscale(0%) brightness(100%);}
+    filter: grayscale(0%) brightness(100%);
+    pointer-events:all;
+  }
 }
 
 
 .featuredProductImage > img{
   animation-name: mymove;
-  animation-duration: 1s;
+  animation-duration: 2s;
 
 }
 
 
-.product-card:hover .featuredProductImage{
+.product-card:hover .featuredProductImage  > img {
 
- 
    filter: grayscale(100%) brightness(0); 
 
 }
@@ -211,7 +215,6 @@ img{
   overflow : hidden;
   transition: ease all 0.3s ;
   opacity: 100;
- 
 }
 
 ajax-cart-product-form[processing]:before {
