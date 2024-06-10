@@ -7,7 +7,7 @@
           
             {{ product.featured_image | image_url: width: 700 | image_tag }}
            
-         <div class=" opacity-0  text-c1 group-hover:opacity-100 absolute flex justify-center items-center inset-0 ">
+         <div class=" opacity-0  index-num text-c1 group-hover:opacity-100 absolute flex justify-center items-center inset-0 ">
             <h2 class=" indent-0  text-[20px ]"> ( 001 ) </h2>
          </div>   
         </div>
@@ -21,7 +21,7 @@
 
     {% render 'info-line' with { title:'Name', value: product.title } %}
     {% render 'info-line' with { title:'Price', value:  product.price | money  } %}
-
+    {% render 'info-line' with { title:'Status', value:  'Available'  } %}
     <p class='opacity-50' >  </p>
     <p> {{ product.compare_at_price | money_with_currency }} </p>
 </div>
