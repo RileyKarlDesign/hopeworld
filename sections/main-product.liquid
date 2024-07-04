@@ -1,20 +1,20 @@
 
 
 <div class=" relative"> 
-        <div class="pb-4  pt-4 overflow-hidden"> 
+        <div class="pb-4  pt-0  overflow-hidden"> 
 
                         <!-- Slider main container -->
-                        <div class="product-swiper">
+                        <div class="product-swiper h-[80vh] overflow-hidden">
                             <!-- Additional required wrapper -->
-                            <div class="swiper-wrapper ">
+                            <div class="swiper-wrapper h-full ">
                             <!-- Slides -->
                      
                             {% for image in product.images %}
 
-                                <div class='swiper-slide flex justify-center '>
-                                    <div class="object-contain"> 
-                                    <div class='bg-stone-50  aspect-main  '>
-                                        {{ image | image_url: width: 700 | image_tag }}      
+                                <div class='swiper-slide border-2 flex justify-center  overflow-hidden  bg-stone-50'>
+                                    <div class="object-contain h-full aspect-main "> 
+                                    <div class='bg-stone-100  aspect-main h-full '>
+                                        {{ image | image_url: width: 700 | image_tag: class:'h-full object-contain' }}      
                                     </div>      
                                         <p class='caption pl-2 pt-1 text-center absolute top-0 '> {{ forloop.index }} / {{ forloop.length }}  </p>            
                                     </div>
