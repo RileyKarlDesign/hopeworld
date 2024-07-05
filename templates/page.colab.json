@@ -1,3 +1,12 @@
+/*
+* ------------------------------------------------------------
+* IMPORTANT: The contents of this file are auto-generated.
+*
+* This file may be updated by the Shopify admin theme editor
+* or related systems. Please exercise caution as any changes
+* made to this file may be overwritten.
+* ------------------------------------------------------------
+*/
 {
   "sections": {
     "main": {
@@ -11,13 +20,13 @@
         "slide_nkeywt": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/solid-color-image_2.png"
+            "image": "shopify:\/\/shop_images\/429803118_2156216304721522_75563958028303685_n.jpg"
           }
         },
         "slide_BMx7M8": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/solid-color-image_3.png"
+            "image": "shopify:\/\/shop_images\/425859481_1131874058238373_8117148902762344750_n.jpg"
           }
         }
       },
