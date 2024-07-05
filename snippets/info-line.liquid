@@ -1,4 +1,31 @@
-<div class='grid  grid-cols-2 p-1 border-t-2 border-dotted border-black '>  
-<p> {{ title }} </p>
-<p class=' opacity-50 '> {{ value }} </p>
-</div>
+
+{% if title == 'Price' %}
+
+    <div class='grid  grid-cols-2 p-1 border-t-2 border-dotted border-black '>  
+         <p> {{ title }} </p>
+        
+
+         <ul>
+            {% if value.compare_at_price > 0 %}
+                <p class="unavailble">
+                {{ value.compare_at_price | money_with_currency }}</p>
+                <p class="js-price" data-default-price="{{ value.compare_at_price | money_with_currency  }}">
+                {{ value.price | money_with_currency }}
+                </p>
+            {% else %}
+
+                <p class="js-price" data-default-price="{{ value.price | money_with_currency  }}">{{ value.price | money_with_currency  }}</p>
+            {% endif %}
+         </ul>
+    
+    </div>
+
+
+{% else %}
+
+    <div class='grid  grid-cols-2 p-1 border-t-2 border-dotted border-black '>  
+        <p> {{ title }} </p>
+        <p class=' opacity-50 '> {{ value }} </p>
+    </div>
+
+{% endif %}
