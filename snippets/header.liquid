@@ -3,19 +3,19 @@
   <div class="hover:rotate-[360deg] transition-all duration-150 w-10 "><a class=' ' href=" /"> {{  shop.brand.square_logo | image_url: width: 700 | image_tag }} </a></div>
 </div>
   
-  <div class=' HEADER HERE flex align-middle bg-opacity-40 justify-center h-0 overflow-visible z-50 w-full sticky top-2  '> 
+  <div class=' HEADER HERE flex p-2 align-middle bg-opacity-40 justify-center h-0 overflow-visible z-50 w-full sticky ms:top-2 top-0 '> 
 
-      <div class='flex w-fit justify-center items-center h-el p-4 bg-c1 border-2 border-dotted border-black  
+      <div class='flex sm:w-base w-full justify-center items-center h-el p-4 bg-c1 border-2 border-dotted border-black  
         
         bg-opacity-50 rounded-base  backdrop-blur-lg'>
           {% for link in linklists.main-menu.links %} 
             <h2 class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></h2>
           {% endfor %}
           <div class='flex justify-end w-fit h-fit cursor-pointer cart-btn'>
-            <h2 class='w-fit  h-fit  pt-[2px] pl-2 pr-2' >Cart(
+            <h2 class='w-fit  h-fit  pt-[2px] pl-2 pr-2' >Cart [
               <span data-ajax-cart-bind="item_count" class="header__cart-quantity pointer-events-none">
                 {{ cart.item_count }} 
-      </span> )
+      </span> ]
             </h2>
           </div> 
       </div>
