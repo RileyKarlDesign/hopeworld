@@ -2,7 +2,7 @@
 
 
 
-<div class="my-cart relative bg-c1 border-2 border-dotted border-black rounded-base backdrop-blur-lg h-full p-2" >
+<div class="my-cart relative bg-c1 border-2 border-dotted border-black rounded-base backdrop-blur-lg h-full p-2 pt-0 pb-0" >
 
 {% form 'cart', cart, id: 'my-ajax-cart-form' %}
     <div class="p-2 fixed z-50 bottom-0 left-0 right-0">
@@ -12,8 +12,8 @@
     </div>
 {% endform %}
 
-  <div class='flex fixed top-2 right-2 w-fit h-el pl-4 z-50 pr-4 justify-center items-center bg-c1  bg-opacity-50  border-2 border-dotted border-black backdrop-blur-lg'>
-    <h2 class='cart-btn'>Close</h2>
+  <div class=' cart-btn flex fixed top-2 right-2  w-fit  h-el pl-2 z-50 pr-2 justify-center items-center bg-c1  bg-opacity-50  border-2 border-dotted border-black backdrop-blur-lg'>
+    <h2 class=''>Close</h2>
   </div>
 
 
@@ -21,7 +21,7 @@
   <div class=" overflow-scroll h-full" data-ajax-cart-section >
 
 
-    <div class="my-cart__items flex flex-col gap-2" data-ajax-cart-section-scroll >
+    <div class="my-cart__items flex flex-col gap-2 pb-10" data-ajax-cart-section-scroll >
       <!-- Loop through cart items -->
 
       {% for line_item in cart.items %}
