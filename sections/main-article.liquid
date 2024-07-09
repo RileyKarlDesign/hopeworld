@@ -1,7 +1,20 @@
-<div class="pt-4 flex items-center justify-center ">
-    <div class="w-1/2">
-        <h2>{{ article.title }}</h2>
+
+
+
+
+<div class=" flex items-center justify-center ">
+    <div class="sm:w-base w-full mt-[90px]">
+
+
+    <h1>{{ article.title }}</h1>
+
+    <div class="img w-base aspect-main pt-4 pb-8">
+        {{ article.image | image_url: width: 700 | image_tag }} 
+    </div>
+
+        
         <p>{{ article.published_at | date: '%d %B %Y' }}</p>
         {{ article.content }}
     </div>
+
 </div>
