@@ -1,9 +1,9 @@
-<div class='grid grid-cols-2  p-2'>
+<div class='grid grid-cols-3 gap-2 p-2'>
   {% for article in blog.articles %}
     <a href="{{ article.url }}">
 
     <div>
-      <div class=''>
+      <div class='aspect-square'>
       {{ article.image | image_url: width: 700 | image_tag }}
       </div>
       <h2>{{ article.title }}</h2>
