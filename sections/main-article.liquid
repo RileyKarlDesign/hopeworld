@@ -11,7 +11,7 @@
         <p>{{ article.published_at | date: '%d %B %Y' }}</p>
     </div>
 
-    <div class="img md:w-base w-full aspect-main pt-4 pb-8">
+    <div class="img md:w-base w-full h-fit pt-4 pb-8">
         {{ article.image | image_url: width: 700 | image_tag }} 
     </div>
 
