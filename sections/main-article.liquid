@@ -3,7 +3,7 @@
 
 
 <div class=" flex items-center justify-center ">
-    <div class="sm:w-base w-full ">
+    <div class="sm:w-base w-full md:p-0 p-2 ">
 
 
     <div class="mt-[90px] mb-[40px] ">
@@ -11,7 +11,7 @@
         <p>{{ article.published_at | date: '%d %B %Y' }}</p>
     </div>
 
-    <div class="img w-base aspect-main pt-4 pb-8">
+    <div class="img md:w-base w-full aspect-main pt-4 pb-8">
         {{ article.image | image_url: width: 700 | image_tag }} 
     </div>
 
