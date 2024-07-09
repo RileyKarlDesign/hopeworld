@@ -4,19 +4,19 @@
         <div class="pb-4  md:pl-0 md:pr-0 p-2 sm:pt-0 pt-[65px]  overflow-hidden"> 
 
                         <!-- Slider main container -->
-                        <div class="product-swiper w-full   h-[75vh] overflow-hidden">
+                        <div class="product-swiper w-full   md:h-[75vh]  h-fit overflow-hidden">
                             <!-- Additional required wrapper -->
                             <div class="swiper-wrapper w-full h-full ">
                             <!-- Slides -->
                      
                             {% for image in product.images %}
 
-                                <div class='swiper-slide w-full h-fit aspect-main border-2  flex justify-center   overflow-hidden  bg-red-500'>
+                                <div class='swiper-slide w-full h-fit aspect-main  flex justify-center   overflow-hidden  bg-red-500'>
                                     <div class="   "> 
                                 <div class='bg-stone-100  aspect-main md:h-full md:w-auto w-full h-fit '>
                                         {{ image | image_url: width: 700 | image_tag: class:'h-full object-contain' }}      
                                     </div>      
-                                        <p class='caption pl-2 pt-1 text-center absolute top-0 '> {{ forloop.index }} / {{ forloop.length }}  </p>            
+                                        <p class='caption pl-2 pt-1 pb-2 text-center absolute bottom-0 left-0  right-0 center '> {{ forloop.index }} / {{ forloop.length }}  </p>            
                                     </div>
                                 </div>
                     
