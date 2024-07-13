@@ -1,5 +1,13 @@
 document.addEventListener('DOMContentLoaded',function () {
 
+  let atcbtn = document.querySelector('#add-to-cart-button');
+
+  atcbtn.addEventListener('click', function () {  
+      const audio = new Audio('../assets/add.mp3');
+      audio.play();
+  });
+
+
   let addToCartFormSelector = "#add-to-cart-form",
      productOptionsSelector = addToCartFormSelector + " [name*=option]";
   
@@ -89,11 +97,13 @@ document.addEventListener('DOMContentLoaded',function () {
         $addToCartButton = document.querySelector("#add-to-cart-button"),
         $maxQuantity = selectedVariant.inventory_quantity;
 
+
     
       if (canAddToCart) {
         $id.value = selectedVariant.id;
         $addToCartButton.disabled = false;
         $quantity.dataset.max = $maxQuantity;
+
       } else {
         $id.value = 'null'; 
         $addToCartButton.disabled = true; 
@@ -200,13 +210,18 @@ document.addEventListener('DOMContentLoaded',function () {
   let cartState = false ;
 
      let closeCart= ()=> {
-      
+
+      const audio = new Audio('../assets/clickypoo.wav');
+      audio.play();
+
       cart.classList.remove('cart-open')
       
     };
 
     let openCart= ()=> {
-  
+      
+      const audio = new Audio('../assets/clickypoo.wav');
+      audio.play();
       cart.classList.add('cart-open')
 
     };

@@ -7,7 +7,6 @@ $(document).ready(function() {
   
     let productForm = {
   
-     
 
       onProductOptionChanged: function (event){
   
@@ -34,7 +33,6 @@ $(document).ready(function() {
 
           console.log(formData)
 
-          
 
           $.each(formData, function(index, item) {
             if(item.name.indexOf('option') !== -1 ){
@@ -60,6 +58,7 @@ $(document).ready(function() {
       }, 
   
       validate: function(event, selectedVariant ){
+
         let   
           $form = $(this),
           hasVariant = selectedVariant !== null,
@@ -71,9 +70,11 @@ $(document).ready(function() {
         
 
           if(canAddToCart){
+
             $id.val(selectedVariant.id);
             $addToCartButton.prop('disabled', false );
             $quantity.dataset.max = $maxQuantity;
+
 
           }else{
             $id.val('')
