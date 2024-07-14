@@ -4,7 +4,7 @@
 </div>
   
   <div class=' HEADER HERE fixed flex align-middle  justify-center  overflow-visible z-50  sm:left-0 md:left-0 left-[53px] right-0 md:top-0 top-0 '> 
-
+here
       <div class="p-2 w-full flex items-center justify-center ">
         <div class='flex sm:w-base w-full justify-center items-center h-el  bg-c1 border-2 border-dotted border-black
         
@@ -12,8 +12,8 @@
             {% for link in linklists.main-menu.links %}
               <h2 class='  w-fit  h-fit  pt-[2px] pl-2 pr-2'><a href="{{ link.url }}">{{ link.title }}</a></h2>
             {% endfor %}
-            <div class='flex justify-end w-fit h-fit cursor-pointer cart-btn'>
-              <h2 class='w-fit  h-fit  pt-[2px] pl-2 pr-2' >Cart [
+            <div class='flex justify-end w-fit h-fit cursor-pointer cart-btn select-none'>
+              <h2 class='w-fit  h-fit  pt-[2px] pl-2 pr-2 select-none ' >Cart [
                 <span data-ajax-cart-bind="item_count" class="header__cart-quantity pointer-events-none">
                   {{ cart.item_count }}
         </span> ]
