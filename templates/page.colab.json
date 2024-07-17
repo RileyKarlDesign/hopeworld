@@ -40,13 +40,20 @@
           "settings": {
             "image": "shopify:\/\/shop_images\/Screenshot_2024-07-17_at_20.48.30.png"
           }
+        },
+        "slide_aeUKq6": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-07-17_at_20.49.51.png"
+          }
         }
       },
       "block_order": [
         "slide_LQAbe9",
         "slide_BMx7M8",
         "slide_F4htig",
-        "slide_HD7qPY"
+        "slide_HD7qPY",
+        "slide_aeUKq6"
       ],
       "settings": {
         "title": "Adidas Collaboration",
