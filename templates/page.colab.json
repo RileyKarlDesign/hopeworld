@@ -17,16 +17,16 @@
     "slideshow_and_text_AQijbL": {
       "type": "slideshow-and-text",
       "blocks": {
-        "slide_LQAbe9": {
-          "type": "slide",
-          "settings": {
-            "image": "shopify:\/\/shop_images\/Waiter7-1.jpg"
-          }
-        },
         "slide_BMx7M8": {
           "type": "slide",
           "settings": {
             "image": "shopify:\/\/shop_images\/HOPEEDWIN01.jpg"
+          }
+        },
+        "slide_LQAbe9": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/Waiter7-1.jpg"
           }
         },
         "slide_F4htig": {
@@ -49,8 +49,8 @@
         }
       },
       "block_order": [
-        "slide_LQAbe9",
         "slide_BMx7M8",
+        "slide_LQAbe9",
         "slide_F4htig",
         "slide_HD7qPY",
         "slide_aeUKq6"
