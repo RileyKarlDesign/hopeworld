@@ -17,22 +17,28 @@
     "slideshow_and_text_AQijbL": {
       "type": "slideshow-and-text",
       "blocks": {
-        "slide_nkeywt": {
+        "slide_LQAbe9": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/429803118_2156216304721522_75563958028303685_n.jpg"
           }
         },
         "slide_BMx7M8": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/425859481_1131874058238373_8117148902762344750_n.jpg"
+            "image": "shopify:\/\/shop_images\/HOPEEDWIN01.jpg"
+          }
+        },
+        "slide_F4htig": {
+          "type": "slide",
+          "settings": {
+            "image": "shopify:\/\/shop_images\/IMGP1638.jpg"
           }
         }
       },
       "block_order": [
-        "slide_nkeywt",
-        "slide_BMx7M8"
+        "slide_LQAbe9",
+        "slide_BMx7M8",
+        "slide_F4htig"
       ],
       "settings": {
         "title": "Adidas Collaboration",
