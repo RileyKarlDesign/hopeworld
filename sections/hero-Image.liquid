@@ -1,0 +1,65 @@
+
+
+  <div class=" grid md:grid-cols-6 grid-cols-1 align-center top-1 left-1 right-1 overflow-hidden">
+
+    <div class=' bg-stone-50 h-fit  md:col-span-2'>
+          <div class=' md:col-span-4   border-2 overflow-visible relative  '>
+          
+                <div class=' bg-stone-50 overflow-visible h-full w-full'>
+                  {{ section.settings.image_1 | img_url: '2048x' | img_tag: class:'h-[130vh]' }}
+                  </div>
+                  {% if section.settings.product_1  != ''  %}
+                    {% render 'product-link' with {text: section.settings.img_text_1 , link: section.settings.product_1.url  %}
+                    {% endif %}
+              
+          
+          </div>   
+
+        
+
+
+    </div>   
+    </div>   
+    
+   
+
+ 
+
+
+{% schema %}
+
+  {
+    "name": "Two Images",
+    "settings": [
+      {
+        "type": "checkbox",
+        "id": "reversed",
+        "label": "Reverse Layout"
+      },
+      
+      {
+        "type": "image_picker",
+        "id": "image_1",
+        "label": "Image One"
+      },
+      {
+        "type": "product",
+        "id": "product_1",
+        "label": "Product"
+      },
+      {
+        "type": "text",
+        "id": "img_text_1",
+        "label": "Image One Text"
+      }
+    
+    ],
+
+    "presets": [
+      {
+        "name": "Two Images ",
+        "category": "Content"
+      }
+    ]
+  }
+{% endschema %}
