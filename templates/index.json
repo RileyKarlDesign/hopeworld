@@ -21,6 +21,18 @@
         "img_text_2": "Name Here"
       }
     },
+    "two_images_bkd48a": {
+      "type": "two-images",
+      "settings": {
+        "reversed": false,
+        "image_1": "shopify:\/\/shop_images\/P1051225.jpg",
+        "product_1": "hellspawn-candle",
+        "img_text_1": "Hell Spawn",
+        "image_2": "shopify:\/\/shop_images\/Screenshot_2024-07-17_at_20.49.51.png",
+        "product_2": "",
+        "img_text_2": ""
+      }
+    },
     "about_block_hDwwtB": {
       "type": "about-block",
       "settings": {
@@ -32,6 +44,7 @@
   },
   "order": [
     "two_images_btajzm",
+    "two_images_bkd48a",
     "about_block_hDwwtB"
   ]
 }
