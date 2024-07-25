@@ -7,7 +7,7 @@
           
                 <div class=' bg-stone-50 overflow-visible h-full w-full'>
                   {{ section.settings.image_1 | img_url: '2048x' | img_tag: class:'h-[130vh]' }}
-                  </div>
+                  </div> 
                   {% if section.settings.product_1  != ''  %}
                     {% render 'product-link' with {text: section.settings.img_text_1 , link: section.settings.product_1.url  %}
                     {% endif %}
