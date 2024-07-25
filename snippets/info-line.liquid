@@ -9,12 +9,12 @@
             {% if value.compare_at_price > 0 %}
                 <p class="unavailble">
                 {{ value.compare_at_price | money_with_currency }}</p>
-                <p class="js-price" data-default-price="{{ value.compare_at_price | money_with_currency  }}">
+                <p class=" opacity-50 js-price" data-default-price="{{ value.compare_at_price | money_with_currency  }}">
                 {{ value.price | money_with_currency }}
                 </p>
             {% else %}
 
-                <p class="js-price" data-default-price="{{ value.price | money_with_currency  }}">{{ value.price | money_with_currency  }}</p>
+                <p class="js-price opacity-50 " data-default-price="{{ value.price | money_with_currency  }}">{{ value.price | money_with_currency  }}</p>
             {% endif %}
          </ul>
     

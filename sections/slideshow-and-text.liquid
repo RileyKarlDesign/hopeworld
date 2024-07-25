@@ -13,10 +13,10 @@
           
             <div class=" sticky bottom-4 sm:w-base  w-full p-4 bg-c1 border-2 border-dotted border-black bg-opacity-50 rounded-base backdrop-blur-lg  ">
               <div class="flex justify-between ">
-                <h2 class=" indent-0"> Hope X Client Name </h2>
+                <h2 class=" indent-0"> {{ block.settings.title }} </h2>
                 <h2 class=" indent-0"> {{ forloop.index }} / {{forloop.length}}</h2>
               </div>
-              <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iste et eum quas, cupiditate ex magni exercitationem molestias porro aspernatur vitae nam ut suscipit, ipsa commodi itaque non minus. At, maxime!</p>
+              <p> {{block.settings.body}}</p>
             </div>
           </div>
 

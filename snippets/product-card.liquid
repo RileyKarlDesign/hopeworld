@@ -30,7 +30,13 @@
 
     {% render 'info-line' with { title:'Name', value: product.title } %}
     {% render 'info-line' with { title:'Price', value:  product } %}
+
+    {% if product.available%}
     {% render 'info-line' with { title:'Status', value:  'Available'  } %}
+    {% else %}
+    {% render 'info-line' with { title:'Status', value:'Sold Out' } %}
+    {% endif %}
+
     <p class='opacity-50' >  </p>
     <p> {{ product.compare_at_price | money_with_currency }} </p>
     </div>
