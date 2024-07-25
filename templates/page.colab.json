@@ -20,31 +20,41 @@
         "slide_BMx7M8": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/HOPEEDWIN01.jpg"
+            "image": "shopify:\/\/shop_images\/HOPEEDWIN01.jpg",
+            "title": "Title Can Be Edited - this Image is perfect",
+            "body": "Here is the base content that is to be edited. Use around three lines of text for the text box to look like a good size- this is filler text as a example"
           }
         },
         "slide_LQAbe9": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Waiter7-1.jpg"
+            "image": "shopify:\/\/shop_images\/Waiter7-1.jpg",
+            "title": "Colab With ...",
+            "body": "Here is the base content that is to be edited. Use around three lines of text for the text box to look like a good size- this is filler text as a example"
           }
         },
         "slide_F4htig": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/IMGP1638.jpg"
+            "image": "shopify:\/\/shop_images\/IMGP1638.jpg",
+            "title": "",
+            "body": ""
           }
         },
         "slide_HD7qPY": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-07-17_at_20.48.30.png"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-07-17_at_20.48.30.png",
+            "title": "title here",
+            "body": "Here is the base content that is to be edited. Use around three lines of text for the text box to look like a good size- this is filler text as a example"
           }
         },
         "slide_aeUKq6": {
           "type": "slide",
           "settings": {
-            "image": "shopify:\/\/shop_images\/Screenshot_2024-07-17_at_20.49.51.png"
+            "image": "shopify:\/\/shop_images\/Screenshot_2024-07-17_at_20.49.51.png",
+            "title": "Title here",
+            "body": "Here is the base content that is to be edited. Use around three lines of text for the text box to look like a good size- this is filler text as a example"
           }
         }
       },
