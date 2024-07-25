@@ -9,6 +9,14 @@
 */
 {
   "sections": {
+    "hero_image_rRfmeb": {
+      "type": "hero-Image",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/449802258_1138586390691349_5433036890920954783_n.jpg",
+        "product_1": "",
+        "img_text_1": ""
+      }
+    },
     "two_images_btajzm": {
       "type": "two-images",
       "settings": {
@@ -35,6 +43,7 @@
     }
   },
   "order": [
+    "hero_image_rRfmeb",
     "two_images_btajzm",
     "two_images_bkd48a"
   ]
