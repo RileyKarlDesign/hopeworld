@@ -40,11 +40,20 @@
         "product_2": "",
         "img_text_2": ""
       }
+    },
+    "hero_image_7qYhpU": {
+      "type": "hero-Image",
+      "settings": {
+        "image_1": "shopify:\/\/shop_images\/P1051486.jpg",
+        "product_1": "",
+        "img_text_1": ""
+      }
     }
   },
   "order": [
     "hero_image_rRfmeb",
     "two_images_btajzm",
-    "two_images_bkd48a"
+    "two_images_bkd48a",
+    "hero_image_7qYhpU"
   ]
 }
