@@ -32,19 +32,10 @@
         "product_2": "",
         "img_text_2": ""
       }
-    },
-    "about_block_hDwwtB": {
-      "type": "about-block",
-      "settings": {
-        "image_1": "shopify:\/\/shop_images\/bunny8.png",
-        "title": "Title text",
-        "body": ""
-      }
     }
   },
   "order": [
     "two_images_btajzm",
-    "two_images_bkd48a",
-    "about_block_hDwwtB"
+    "two_images_bkd48a"
   ]
 }
