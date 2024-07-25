@@ -1,38 +1,40 @@
 
-  
+  {% if section.settings.reversed %}
 
-  
+  <div class=" grid md:grid-cols-6 grid-cols-1 align-center top-1 left-1 right-1 overflow-hidden">
 
-<div class=" grid md:grid-cols-2 grid-cols-1 align-center top-1 left-1 right-1 overflow-hidden">
+        <div class=' md:col-span-4   border-2 overflow-visible relative  '>
+        
+              <div class=' bg-stone-50 overflow-visible h-full w-full'>
+                {{ section.settings.image_1 | img_url: '2048x' | img_tag: class:'h-[120vh]' }}
+                </div>
+                {% if section.settings.product_1  != ''  %}
+                  {% render 'product-link' with {text: section.settings.img_text_1 , link: section.settings.product_1.url  %}
+                  {% endif %}
+            
+        
+        </div>   
 
-      <div class=' overflow-visible relative  '>
-        <div class="  flex items-center justify-center h-full">
-          <div class=" relative h-fit w-fit">
-            <div class=' bg-stone-50 overflow-visible w-80 rotate-3 '>
-              {{ section.settings.image_1 | img_url: '2048x' | img_tag }}
+        <div class=' bg-stone-50 h-fit  md:col-span-'>
+            <div class="h-full relative   ">
+              <div class=' bg-stone-50 h-fit '>
+              {{ section.settings.image_2 | img_url: '2048x' | img_tag: class:'h-fit' }}
               </div>
-              {% if section.settings.product_1  != ''  %}
-                {% render 'product-link' with {text: section.settings.img_text_1 , link: section.settings.product_1.url  %}
-                {% endif %}
-          </div>
-        </div>
-      </div>   
 
-      <div class=' bg-stone-50 h-full  '>
-          <div class="h-full relative  border-2  ">
-            <div class=' bg-stone-50 h-full '>
-            {{ section.settings.image_2 | img_url: '2048x' | img_tag }}
+              {% if section.settings.product_2 != '' %}
+              {% render 'product-link' with {text: section.settings.img_text_2 , link: section.settings.product_2.url  %}
+              {% endif %}
             </div>
-
-            {% if section.settings.product_2 != '' %}
-            {% render 'product-link' with {text: section.settings.img_text_2 , link: section.settings.product_2.url  %}
-            {% endif %}
-          </div>
-      </div> 
+        </div> 
 
 
-</div>   
+  </div>   
 
+  {% else %}
+
+  here
+
+{% endif %}
    
 
  
@@ -43,6 +45,11 @@
   {
     "name": "Two Images",
     "settings": [
+      {
+        "type": "radio",
+        "id": "reversed",
+        "label": "Reverse Layout"
+      },
       {
         "type": "image_picker",
         "id": "image_1",
