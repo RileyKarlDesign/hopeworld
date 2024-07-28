@@ -48,12 +48,25 @@
         "product_2": "",
         "img_text_2": ""
       }
+    },
+    "two_images_9AbeKf": {
+      "type": "two-images",
+      "settings": {
+        "reversed": false,
+        "image_1": "shopify:\/\/shop_images\/P1051332.jpg",
+        "product_1": "hellspawn-candle",
+        "img_text_1": "Hellspawn Candel",
+        "image_2": "shopify:\/\/shop_images\/Screenshot_2024-07-17_at_20.45.51.png",
+        "product_2": "kewpie-devil",
+        "img_text_2": "Kewpie Devil"
+      }
     }
   },
   "order": [
     "hero_image_7qYhpU",
     "two_images_btajzm",
     "hero_image_rRfmeb",
-    "two_images_bkd48a"
+    "two_images_bkd48a",
+    "two_images_9AbeKf"
   ]
 }
