@@ -60,6 +60,18 @@
         "product_2": "kewpie-devil",
         "img_text_2": "Kewpie Devil"
       }
+    },
+    "inline_images_npmnY6": {
+      "type": "inline-Images",
+      "settings": {
+        "reversed": false,
+        "image_1": "shopify:\/\/shop_images\/449804140_823213196126104_1882473528318857890_n.jpg",
+        "product_1": "kewpie-devil",
+        "img_text_1": "Kewpie",
+        "image_2": "shopify:\/\/shop_images\/P1051285.jpg",
+        "product_2": "hellspawn-candle",
+        "img_text_2": "Hellspawn"
+      }
     }
   },
   "order": [
@@ -67,6 +79,7 @@
     "two_images_btajzm",
     "hero_image_rRfmeb",
     "two_images_bkd48a",
-    "two_images_9AbeKf"
+    "two_images_9AbeKf",
+    "inline_images_npmnY6"
   ]
 }
