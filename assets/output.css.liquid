@@ -1057,10 +1057,6 @@ video {
   width: 400px;
 }
 
-.w-\[full\] {
-  width: full;
-}
-
 .w-auto {
   width: auto;
 }
@@ -1567,6 +1563,11 @@ video {
   background-color: rgb(113 63 18 / var(--tw-bg-opacity));
 }
 
+.bg-slate-500 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(100 116 139 / var(--tw-bg-opacity));
+}
+
 .bg-opacity-0 {
   --tw-bg-opacity: 0;
 }
@@ -1825,6 +1826,10 @@ video {
   padding-top: 1.25rem;
 }
 
+.pt-6 {
+  padding-top: 1.5rem;
+}
+
 .pt-60 {
   padding-top: 15rem;
 }
@@ -1841,48 +1846,16 @@ video {
   padding-top: 100px;
 }
 
+.pt-\[21px\] {
+  padding-top: 21px;
+}
+
 .pt-\[2px\] {
   padding-top: 2px;
 }
 
 .pt-\[65px\] {
   padding-top: 65px;
-}
-
-.pt-6 {
-  padding-top: 1.5rem;
-}
-
-.pt-\[30px\] {
-  padding-top: 30px;
-}
-
-.pt-\[15px\] {
-  padding-top: 15px;
-}
-
-.pt-\[22\] {
-  padding-top: 22;
-}
-
-.pt-\[22px\] {
-  padding-top: 22px;
-}
-
-.pt-\[28px\] {
-  padding-top: 28px;
-}
-
-.pt-\[24px\] {
-  padding-top: 24px;
-}
-
-.pt-\[20px\] {
-  padding-top: 20px;
-}
-
-.pt-\[21px\] {
-  padding-top: 21px;
 }
 
 .text-center {
@@ -2372,7 +2345,9 @@ img{
 
 ajax-cart-product-form[processing]:before {
   content: 'Loading';
-  display: block;
+  display: absolute;
+  inset: 0;
+  background-color: red;
 }
 
 /* Make the "Add to cart" button look visually disabled while loading */
@@ -2392,13 +2367,6 @@ ajax-cart-product-form[processing] [type="submit"] {
 
 html.js-ajax-cart-processing .my-cart__items {
   opacity: .7;
-}
-
-/* Show a loading indicator */
-
-html.js-ajax-cart-processing .my-cart__items:before {
-  content: 'Loading';
-  display: block;
 }
 
 /*  swiper slide  */
