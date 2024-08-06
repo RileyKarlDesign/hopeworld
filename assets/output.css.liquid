@@ -756,6 +756,14 @@ video {
   top: 60px;
 }
 
+.top-\[10px\] {
+  top: 10px;
+}
+
+.top-\[14px\] {
+  top: 14px;
+}
+
 .-z-10 {
   z-index: -10;
 }
@@ -2503,5 +2511,21 @@ html.js-ajax-cart-processing .my-cart__items {
 
   .md\:pr-0 {
     padding-right: 0px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1280px) {
+  .xl\:grid-cols-5 {
+    grid-template-columns: repeat(5, minmax(0, 1fr));
+  }
+
+  .xl\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
